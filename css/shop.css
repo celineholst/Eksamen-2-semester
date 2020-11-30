@@ -31,6 +31,10 @@
 :root {
     --overskrift: 'Playfair Display', serif;
     --tekst: 'Georgia', sans-serif;
+    --h1-mobil: 32px;
+    --h1-web: 42px;
+    --h2: 24px;
+    --p: 18px;
 }
 
 /* Header */
@@ -45,6 +49,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--hvid);
 }
 
 /* Navigation */
@@ -159,6 +164,30 @@ a {
     transform: rotate(180deg);
 }
 
+/* Indkøbskurv */
+.cart-nav {
+    right: 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-nav .icon i {
+    font-size: 25px;
+}
+
+.cart-nav .item-numb {
+    font-size: 15px;
+    height: 23px;
+    width: 23px;
+    color: #ff7979;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    background: #ffcccc;
+    border: 1px solid #ffb3b3;
+}
+
 /* Media queries til header */
 @media screen and (min-width: 768px) {
     body {
@@ -235,6 +264,159 @@ a {
         margin-left: auto;
         margin-right: auto;
     }
+    
+    .cart-nav {
+        position: absolute;
+        right: 150px;
+    }
+}
+
+main {
+    background-color: var(--beige);
+}
+
+/* Produkter */
+.wrapper {
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--hvid);
+    margin: 25px;
+}
+
+.card img {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.wrapper .card .content {
+    padding: 10px 20px 22px 20px;
+}
+
+.card .content .row,
+.card .content .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Produkttekst */
+.content .row .details span {
+    font-family: var(--overskrift);
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--sort);
+}
+
+.content .row .details p {
+    font-family: var(--tekst);
+    font-size: var(--p);
+    color: var(--grey);
+    margin-top: 5px;
+}
+
+.price {
+    color: var(--sort);
+    font-family: var(--tekst);
+    font-size: var(--p);
+    font-weight: bold;
+}
+
+/* Knapper */
+.content .buttons {
+    margin-top: 20px;
+}
+
+.content .buttons button {
+    width: 100%;
+    outline: none;
+    padding: 10px 0;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+button a {
+    text-decoration: none;
+    color: var(--cta);
+}
+
+.buttons button:first-child {
+    background: var(--hvid);
+    margin-right: 10px;
+}
+
+.buttons button:last-child {
+    color: var(--hvid);
+    background: var(--cta);
+    margin-left: 10px;
+}
+
+/* Media queries til content */
+@media screen and (min-width: 768px) {
+    /* Hover på knapper */
+    .content .buttons button {
+        transition: all 0.3s ease;
+    }
+    
+    button a:hover {
+        color: var(--hvid);
+    }
+    
+    button:first-child:hover {
+        background: var(--cta); 
+    }
+    
+    button:last-child:hover {
+        color: var(--cta);
+        background: var(--hvid);
+    }
+    
+    .wrapper .card .content {
+        position: absolute;
+        width: 100%;
+        background: var(--hvid);
+        bottom: -50%;
+        box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+    }
+    
+    .wrapper .card {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .wrapper .card:hover .content {
+        bottom: 0;
+    }
+    
+    .wrapper .card:hover img {
+        transform: scale(1.1);
+        transition: all 0.3s ease;
+    }
+    
+    /* Produkter */ 
+    .wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        max-width: 1280px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 /* Footer */
@@ -293,7 +475,6 @@ a {
 /* Media queries til footer */
 @media screen and (min-width: 768px) {
     .footer {
-        position: fixed;
         bottom: 0;
     }
     

@@ -31,6 +31,10 @@
 :root {
     --overskrift: 'Playfair Display', serif;
     --tekst: 'Georgia', sans-serif;
+    --h1-mobil: 32px;
+    --h1-web: 42px;
+    --h2: 24px;
+    --p: 18px;
 }
 
 /* Header */

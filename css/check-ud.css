@@ -1,5 +1,38 @@
-* {
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Standard styles */
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/* CSS variabler */
+:root {
+    --header-height: 3.5rem;
+    --z-fixed: 100;
+}
+
+/* Farver */
+:root {
+    --beige: #e9e4d6;
+    --cta: #cd3c4b;
+    --blue: #4f5f75;
+    --laks: #d07866;
+    --grey: #3e3e3e;
+    --hvid: #ffffff;
+    --sort: #000000;
+}
+
+/* Tekst */
+:root {
+    --overskrift: 'Playfair Display', serif;
+    --tekst: 'Georgia', sans-serif;
+    --h1-mobil: 32px;
+    --h1-web: 42px;
+    --h2: 24px;
+    --p: 18px;
 }
