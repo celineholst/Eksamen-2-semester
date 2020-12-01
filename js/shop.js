@@ -10,7 +10,7 @@ $(document).ready(function () {
         if (toggle && nav) {
             toggle.addEventListener('click', () => {
                 nav.classList.toggle('show')
-                /* Ændre toggle ikon */
+                // Ændre toggle ikon
                 toggle.classList.toggle('bx-x')
             });
         }
@@ -18,36 +18,72 @@ $(document).ready(function () {
 
     showMenu('header-toggle', 'nav-menu');
 
+    /* Array */
+    var arr = ['bæredygtige.', 'lokalt dyrket.', 'smagsrige.', 'høj kvalitet.', 'delikate.'];
+    var i = 0;
+    var heading = document.querySelector('#heading');
+
+    function slide() {
+        // rækker efter class i HTML
+        heading.innerHTML = arr[i];
+        // opacity til 1
+        heading.style.opacity = 1;
+
+        // efter 2 sekunder kalder næste element i array
+        setTimeout(next, 2000);
+    }
+
+    function next() {
+        // formindske index for næste element i array
+        i++;
+
+        if (i > arr.length - 1) {
+            i = 0;
+        }
+
+        // opacity til 0
+        heading.style.opacity = 0;
+
+        // efter 1 sekund kalder slide fn igen
+        setTimeout(slide, 1000);
+    }
+
+    slide();
+    
     /* Indkøbskurv */
     let count = 0;
-    //if add to cart btn clicked
+    //  Tilføjes til indkøbskurv når knappen klikkes
     $('.cart-btn').on('click', function () {
         let cart = $('.cart-nav');
-        // find the img of that card which button is clicked by user
+        // Finder billedet for den knap der trykkes
         let imgtodrag = $(this).parent('.buttons').parent('.content').parent('.card').find("img").eq(0);
         if (imgtodrag) {
-            // duplicate the img
+            // Dubliker billedet
             var imgclone = imgtodrag.clone().offset({
                 top: imgtodrag.offset().top,
                 left: imgtodrag.offset().left
-            }).css({
+            })
+            // Styler billedets størrelse
+            .css({
                 'opacity': '0.8',
                 'position': 'absolute',
                 'height': '150px',
                 'width': '150px',
                 'z-index': '100'
-            }).appendTo($('body')).animate({
+            })
+            // Definere hvor billedet skal føre hen
+            .appendTo($('body')).animate({
                 'top': cart.offset().top + 20,
                 'left': cart.offset().left + 30,
                 'width': 75,
                 'height': 75
             }, 1000, 'easeInOutExpo');
-
+            // Ændre antallet i indkøbskurv
             setTimeout(function () {
                 count++;
                 $(".cart-nav .item-numb").text(count);
             }, 1500);
-
+            // Fjerner elementet fra DOM, men bevarer dataen, skaber forsvindingseffekt
             imgclone.animate({
                 'width': 0,
                 'height': 0

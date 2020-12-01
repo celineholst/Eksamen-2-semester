@@ -9,8 +9,8 @@
     <!-- SEO -->
     <title>Shop</title>
     <meta name="author" content="Louise, Dina og Celine">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Udforsk vores spændende produkter lavet på lokale kvalitets råvarer.">
+    <meta name="keywords" content="shop, produkter, bæredygtig, lokal, smagrig, kvalitet, delikat, sønderjysk, jul, is, chokolade, nødder, mandler">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/shop.css">
@@ -89,7 +89,14 @@
         
     </header>
 
-    <main>   
+    <main>
+    <div class="array">
+        <h1>Vores produkter er</h1>
+        <h1 id="heading"></h1>
+        <p>Alle vores produkter er lavet på lokale sønderjyske råvarer. Gå på opdagelse i vores smagsunivers, og få en smagsoplevelse ud over det sædvanlige. </p>
+    </div>
+    
+    
     <!-- Produkter -->
     <div class="wrapper">
       
@@ -117,15 +124,15 @@
         <!-- Produkt 2 -->
         <div class="card">
            <!-- Produktbillede -->
-            <img src="images/juleskum.png" alt="image">
+            <img src="images/julestock-is.png" alt="image" class="is">
             <!-- Produktinformation -->
             <div class="content">
                 <div class="row">
                     <div class="details">
-                        <span>Juleguf</span>
-                        <p>Guf lavet på juleskum</p>
+                        <span>Julestok is</span>
+                        <p>Gå amok i julestok, 25 cl.</p>
                     </div>
-                    <div class="price">Kr. 35,-</div>
+                    <div class="price">Kr. 25,-</div>
                 </div>
                 <!-- Knapper -->
                 <div class="buttons">
@@ -138,15 +145,15 @@
         <!-- Produkt 3 -->
         <div class="card">
            <!-- Produktbillede -->
-            <img src="images/juleskum.png" alt="image">
+            <img src="images/risalamande-is.png" alt="image" class="is">
             <!-- Produktinformation -->
             <div class="content">
                 <div class="row">
                     <div class="details">
-                        <span>Juleguf</span>
-                        <p>Guf lavet på juleskum</p>
+                        <span>Isalamande</span>
+                        <p>Find mandlen i isen, 25 cl.</p>
                     </div>
-                    <div class="price">Kr. 35,-</div>
+                    <div class="price">Kr. 25,-</div>
                 </div>
                 <!-- Knapper -->
                 <div class="buttons">
@@ -155,6 +162,169 @@
                 </div>
             </div>
         </div>
+        
+        <!-- Produkt 4 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/julestok-stor.png" alt="image" class="is">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Julestok is</span>
+                        <p>Gå amok i julestok, 75 cl.</p>
+                    </div>
+                    <div class="price">Kr. 45,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 5 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/isalamande-stor.png" alt="image" class="is">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Isalamande</span>
+                        <p>Find mandlen i isen, 75 cl.</p>
+                    </div>
+                    <div class="price">Kr. 45,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 6 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/mandler-oko.png" alt="image">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Mandler</span>
+                        <p>Køb mig før jeg smutter!</p>
+                    </div>
+                    <div class="price">Kr. 40,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 7 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/braendt-mandler.png" alt="image">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span id="mandler">Brænd go’e mandler</span>
+                        <p id="mandler-2">Brændte sønderjyske mandler</p>
+                    </div>
+                    <div class="price">Kr. 40,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 8 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/morkchoko.png" alt="image" class="choko-mandler">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Julenat</span>
+                        <p>61% mørk chokolade</p>
+                    </div>
+                    <div class="price">Kr. 39,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 9 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/hvidchoko.png" alt="image">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Snedrøm</span>
+                        <p>Hvid chokolade</p>
+                    </div>
+                    <div class="price">Kr. 39,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Produkt 10 -->
+        <div class="card">
+           <!-- Produktbillede -->
+            <img src="images/julebrud.png" alt="image">
+            <!-- Produktinformation -->
+            <div class="content">
+                <div class="row">
+                    <div class="details">
+                        <span>Julebrud</span>
+                        <p id="chokolade">Mærkechokolade m. orangekrokant</p>
+                    </div>
+                    <div class="price">Kr. 39,-</div>
+                </div>
+                <!-- Knapper -->
+                <div class="buttons">
+                    <button><a href="lille-is-1.html">Se mere</a></button>
+                    <button class="cart-btn">Køb</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    
+    <!-- Levering -->
+    <hr>
+    <div class="terms">
+    <div class="left">
+        <p><i class='bx bx-car'></i>Levering</p>
+        <p>Er du i tvivl om vores leveringmetoder? Se blot vores leveringsbetingelser nedenfor:</p>
+    </div>
+    
+    <!-- Andre spørgsmål -->
+    <div class="right">
+    <p><i class='bx bx-question-mark'></i>Andre spørgsmål?</p>
+    <p>Har du andre udbesvarede spørgsmål? Dem skal vi nok hjælpe dig med at få svar på nedenfor:</p>
+    </div>
     </div>
     
     </main>

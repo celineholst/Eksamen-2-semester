@@ -148,6 +148,7 @@ a {
 .dropdown_menu {
     margin: 1.5rem 0 0 1rem;
     display: none;
+    background-color: white;
 }
 
 .dropdown_item {
@@ -161,6 +162,30 @@ a {
 
 .dropdown:hover .dropdown_icon {
     transform: rotate(180deg);
+}
+
+/* Indkøbskurv */
+.cart-nav {
+    right: 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-nav .icon i {
+    font-size: 25px;
+}
+
+.cart-nav .item-numb {
+    font-size: 15px;
+    height: 23px;
+    width: 23px;
+    color: #ff7979;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    background: #ffcccc;
+    border: 1px solid #ffb3b3;
 }
 
 /* Media queries til header */
@@ -238,6 +263,102 @@ a {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+    
+    .cart-nav {
+        position: absolute;
+        right: 50px;
+    }
+}
+
+/* Produktbillede */
+.imgBox {
+    background-color: var(--beige);
+    height: 280px;
+}
+
+.imgBox img {
+    width: 70%;
+    filter: drop-shadow(0 0 15px #c1bfb5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+/* Produktbeskrivelse */
+.details {
+    font-family: var(--tekst);
+    margin: 20px;
+    line-height: 1.4;
+}
+
+.details p {
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: var(--overskrift);
+}
+
+h2 {
+    font-family: var(--overskrift);
+}
+
+.price {
+    font-family: var(--overskrift);
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* Knap */
+.content button {
+    outline: none;
+    padding: 10px 0;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--hvid);
+    background: var(--cta);
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+}
+
+/* Media queries til content */
+@media screen and (min-width: 768px) {
+    .content {
+        margin-right: 300px;
+    }
+    
+    /* Produktbillede */
+    .imgBox {
+        height: 530px;
+        width: 50%;
+        float: left;
+        padding-top: 50px;
+    }
+    
+    /* Produktbesrkivelse */
+    .content {
+        width: 50%;
+        float: right;
+        padding-top: 100px;
+        padding-right: 50px;
+        padding-left: 20px;
+    }
+    
+    .details p {
+        font-size: var(--p);
+    }
+    
+    .price {
+        margin-top: 10px;
     }
 }
 

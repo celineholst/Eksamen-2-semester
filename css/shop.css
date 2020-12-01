@@ -31,8 +31,8 @@
 :root {
     --overskrift: 'Playfair Display', serif;
     --tekst: 'Georgia', sans-serif;
-    --h1-mobil: 32px;
-    --h1-web: 42px;
+    --h1-mobil: 16px;
+    --h1-web: 32px;
     --h2: 24px;
     --p: 18px;
 }
@@ -202,6 +202,10 @@ a {
     .header_toggle {
         display: none;
     }
+    
+    .cart-nav {
+        position: absolute;
+    } 
 
     /* Navigation */
     .nav {
@@ -256,6 +260,7 @@ a {
         margin: 0;
         top: calc(var(--header-height) + 1rem);
         padding: .5rem 1rem;
+        background-color: white;
     }
 }
 
@@ -267,12 +272,37 @@ a {
     
     .cart-nav {
         position: absolute;
-        right: 150px;
+        right: 50px;
     }
 }
 
 main {
     background-color: var(--beige);
+}
+
+/* Array */
+.array {
+    padding-top: 75px;
+    font-family: var(--overskrift);
+    font-size: var(--h1-mobil);
+    color: #303236;
+    text-align: center;
+}
+
+.array p {
+    font-size: 18px;
+    font-family: var(--tekst);
+    padding-top: 15px;
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+
+#heading {
+    color: var(--cta);
+    opacity: 0;
+    transition: opacity 1s linear;
 }
 
 /* Produkter */
@@ -295,6 +325,10 @@ main {
     margin-right: auto;
 }
 
+.is {
+    padding-top: 70px;
+}
+
 .wrapper .card .content {
     padding: 10px 20px 22px 20px;
 }
@@ -311,6 +345,18 @@ main {
     font-size: 22px;
     font-weight: 500;
     color: var(--sort);
+}
+
+#mandler {
+    font-size: 20px;
+}
+
+#mandler-2 {
+    font-size: 16px;
+}
+
+#chokolade {
+    font-size: 13px;
 }
 
 .content .row .details p {
@@ -361,6 +407,32 @@ button a {
     margin-left: 10px;
 }
 
+/* Levering & andre spørgsmål */
+hr {
+    border-top: 2px solid #303236;
+    margin-top: 30px;
+}
+
+.left, 
+.right {
+    font-family: var(--tekst);
+    font-size: var(--p);
+    line-height: 1.4;
+    padding: 20px;
+    text-align: center;
+}
+
+.terms i {
+    margin: 10px;
+    font-size: 25px;
+    color: var(--cta);
+}
+
+.terms {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
 /* Media queries til content */
 @media screen and (min-width: 768px) {
     /* Hover på knapper */
@@ -395,6 +467,11 @@ button a {
         overflow: hidden;
     }
     
+    .card {
+        width: 300px;
+    height: 350px;
+    }
+    
     .wrapper .card:hover .content {
         bottom: 0;
     }
@@ -404,11 +481,61 @@ button a {
         transition: all 0.3s ease;
     }
     
+    .content .row .details p {
+        font-size: 16px;
+    }
+    
+    #mandler-2 {
+        font-size: 14px;
+    }
+    
+    #chokolade {
+        font-size: 11px;
+    }
+    
+    /* Array */
+    .array {
+        padding-top: 120px;
+        font-size: var(--h1-web);
+    }
+    
+    .array p {
+        font-size: 20px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        margin-left: 200px;
+        margin-right: 200px;
+    }
+    
     /* Produkter */ 
     .wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         max-width: 1280px;
+    }
+    
+    /* Levering & andre spørgsmål */
+    .left {
+        width: 50%;
+        float: left;
+    }
+    
+    .right {
+        width: 50%;
+        float: right;
+    }
+    
+    .terms {
+        padding-bottom: 175px;
+    }
+    
+    .terms i {
+        font-size: 30px;
+    }
+    
+    .left, 
+    .right {
+        padding: 30px;
     }
 }
 
