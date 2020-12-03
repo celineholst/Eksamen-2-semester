@@ -432,6 +432,18 @@ btn {
     line-height: 1.4;
 }
 
+.christmas h3 {
+    padding-bottom: 20px;
+}
+
+.christmas img {
+    width: 125px;
+}
+
+.hoho img {
+    width: 150px;
+}
+
 /* 1. advent flip kort */
 .card {
   width: 100%;
@@ -521,6 +533,77 @@ btn {
     line-height: 1.4;
 }
 
+/* SVG animation */
+.svg-container {
+    margin-top: -200px;
+    margin-bottom: -150px;
+}
+
+.svg-container svg {
+    width: 100%;
+}
+
+#hojrearm {
+    animation: arm 2s infinite alternate;
+}
+
+@keyframes arm {
+    0% {
+    transform: translateX(0px);
+  }
+    
+  50% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+#hat {
+    animation: flyv 1s infinite alternate;
+     transform-origin: bottom;
+}
+
+@keyframes flyv {
+    from {
+         transform: rotateX(0deg);
+    }
+    
+    to {
+        transform: rotateX(10deg);
+    }
+}
+
+#gaver {
+    animation: gift 1s ease-in-out infinite alternate;
+    transform-origin: bottom;
+}
+
+@keyframes gift {
+    from {
+        transform: rotateX(0deg);
+    }
+    
+    to {
+        transform: rotateX(30deg);
+    }
+}
+
+#juletra, #stjerne, #snor, #lys {
+    animation: tree 1s infinite alternate;
+     transform-origin: bottom;
+}
+
+@keyframes tree {
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+        transform: rotate(1deg);
+    }
+}
 
 /* Media queries til content */
 @media screen and (min-width: 768px) {
@@ -628,6 +711,21 @@ btn {
         grid-column: span 3;
         grid-row: span 1;
     }
+    
+    /* Adventkalender */
+    .card {
+        height: 300px;
+    } 
+    
+    .card__content {
+    padding: 45px;
+    }
+    
+    /* Svg animation */
+    .svg-container {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
 
 }
 

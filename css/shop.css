@@ -176,6 +176,10 @@ a {
     font-size: 25px;
 }
 
+.cart-nav a {
+    color: black;
+}
+
 .cart-nav .item-numb {
     font-size: 15px;
     height: 23px;

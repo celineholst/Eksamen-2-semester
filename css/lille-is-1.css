@@ -188,6 +188,10 @@ a {
     border: 1px solid #ffb3b3;
 }
 
+.cart-nav a {
+    color: black;
+}
+
 /* Media queries til header */
 @media screen and (min-width: 768px) {
     body {
