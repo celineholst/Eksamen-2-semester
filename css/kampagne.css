@@ -49,6 +49,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: var(--beige);
 }
 
 /* Navigation */
@@ -231,6 +232,7 @@ a {
         margin: 0;
         top: calc(var(--header-height) + 1rem);
         padding: .5rem 1rem;
+        background-color: var(--beige);
     }
 }
 
@@ -241,12 +243,400 @@ a {
     }
 }
 
+/* Banner */
+.banner {
+    width: 100%;
+    height: 550px;
+    background-image: url(../images/banner-kampagne.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+.banner h1 {
+    padding-top: 60px;
+    font-family: var(--overskrift);
+    font-size: var(--h1-mobil);
+    color: #303236;
+}
+
+.banner p {
+    font-size: 18px;
+    font-family: var(--tekst);
+    padding-top: 15px;
+    line-height: 1.4;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 15px;
+}
+
+.banner button a {
+    text-decoration: none;
+    color: var(--hvid);
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.banner button {
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    cursor: pointer;
+    background: var(--cta);
+    padding: 10px 10px;
+    outline: none;
+}
+
+/* Intro til julekalender */
+#effect {
+    text-align: center;
+    padding-top: 40px;
+    line-height: 1.4;
+    background-color: #4f5f75;
+    color: var(--hvid);
+    padding-bottom: 20px;
+}
+
+#effect h2 {
+    font-family: var(--overskrift);
+    font-size: 28px;
+}
+
+#effect p {
+    font-family: var(--tekst);
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+/* E-mail-form */
+.container h3 {
+    font-family: var(--overskrift);
+    font-size: 22px
+}
+
+.container p {
+    font-size: var(--p);
+    font-family: var(--tekst);
+}
+
+.email-box {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+}
+
+.email-box i {
+    background: var(--cta);
+    width: 40px;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    font-size: 22px;
+}
+
+::placeholder {
+    font-family: var(--tekst);
+}
+
+.tbox,
+btn {
+    border: none;
+    outline: none;
+}
+
+.tbox {
+    width: 0;
+    transition: 0.6s;
+}
+
+.email-box:hover > .tbox,
+.tbox:focus {
+    width: 260px;
+    padding: 0 10px;
+
+}
+
+.btn {
+    background: var(--cta);
+    color: white;
+    font-family: var(--tekst);
+    padding: 0 10px;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    font-size: var(--p);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+}
+
+/* Adventskalender */
+.wrapper-calender {
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.box-calender {
+    background-color: aliceblue;
+    color: black;
+    padding: 80px;
+    display: grid;
+    font-size: 40px;
+    place-items: center;
+    text-align: center;
+}
+
+.content i {
+    font-size: 40px;
+    margin: 10px;
+}
+
+.content img {
+    width: 125px;
+}
+
+.one {
+    background: #feada7;
+}
+
+.two, .four {
+    background: #ff6861;
+}
+
+.three {
+    background: #0c555c;
+}
+
+.five {
+    background: #ccdfcc;
+}
+
+.box-calender, .five {
+    font-family: var(--tekst);
+    font-size: 22px;
+    line-height: 1.4;
+}
+
+/* 1. advent flip kort */
+.card {
+  width: 100%;
+  height: 250px;
+  perspective: 1000px;
+    color: black;
+    display: grid;
+    font-size: 40px;
+    place-items: center;
+    text-align: center;
+    background: #ccdfcc;
+}
+
+.card__inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+    border: none;
+}
+
+.card__inner img {
+    width: 125px;
+}
+
+.card__inner.is-flipped {
+  transform: rotateY(180deg);
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+}
+
+.card__face--front {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card__face--back {
+  transform: rotateY(180deg);
+}
+
+.card__content {
+    padding: 35px;
+}
+
+.card__content h3 {
+    font-family: var(--overskrift);
+    font-size: var(--h2);
+}
+
+.card__content p {
+    font-family: var(--tekst);
+    font-size: var(--p);
+    line-height: 1.4;
+}
+
+.card__content button {
+    outline: none;
+    padding: 5px 5px;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: var(--cta);
+}
+
+.card__content button a {
+    color: var(--hvid);
+}
+
+/* Audio */
+.content h3 {
+    font-family: var(--tekst);
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.4;
+}
+
+
+/* Media queries til content */
+@media screen and (min-width: 768px) {
+    .main {
+        bottom: 0;
+    }
+
+    /* Banner */
+    .banner {
+        height: 700px;
+        padding-top: 50px;
+    }
+
+    .banner h1 {
+        font-size: var(--h1-web);
+    }
+
+    .banner p {
+        font-size: 22px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .banner button {
+        transition: all 0.3s ease;
+    }
+
+    .banner button a {
+        font-size: 22px;
+    }
+
+    .banner button:hover {
+        background: var(--hvid);
+    }
+
+    .banner button a:hover {
+        color: var(--cta);
+    }
+
+    /* Intro julekalender */
+    #effect p {
+        margin-left: 120px;
+        margin-right: 120px;
+        font-size: var(--p);
+    }
+
+    /* Email form */
+    .container h3 {
+        font-family: var(--overskrift);
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .container p {
+        font-family: var(--tekst);
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .email-box i {
+        width: 60px;
+        line-height: 40px;
+        font-size: 23px;
+        transition: all 0.3s ease;
+    }
+
+    .email-box i:hover {
+        background: var(--hvid);
+        color: var(--cta);
+    }
+
+    .btn {
+        width: 140px;
+        font-size: 20px;
+        transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+        background: var(--hvid);
+        color: var(--cta);
+    }
+
+    /* Adventskalender */
+    .wrapper-calender {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+
+    .wrapper-calender .box-calender:nth-child(1) {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+
+    .wrapper-calender .box-calender:nth-child(2) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .wrapper-calender .box-calender:nth-child(4) {
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .wrapper-calender .box-calender:nth-child(5) {
+        grid-column: span 3;
+        grid-row: span 1;
+    }
+
+}
+
 /* Footer */
 .footer {
     font-size: 1.1rem;
     padding: 20px 0;
     line-height: 1.7;
-    font-family: var(--tekst); 
+    font-family: var(--tekst);
 }
 
 .footer_text,
@@ -279,7 +669,7 @@ a {
 }
 
 .footer_link i {
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer_section img {
@@ -297,26 +687,26 @@ a {
 /* Media queries til footer */
 @media screen and (min-width: 768px) {
     .footer {
-        position: fixed;
         bottom: 0;
     }
-    
+
     .footer_section {
         width: 50%;
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
-    
+
     .footer_text {
         text-align: center;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     footer_section,
     .footer_text {
         margin-left: 80px;

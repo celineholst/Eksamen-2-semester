@@ -315,7 +315,7 @@ h2 {
 /* Knap */
 .content button {
     outline: none;
-    padding: 10px 0;
+    padding: 10px 10px;
     font-size: var(--p);
     font-family: var(--tekst);
     font-weight: bold;
@@ -330,18 +330,48 @@ h2 {
     margin-right: 20px;
 }
 
+/* Infographic */
+h3 {
+    font-family: var(--overskrift);
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.infographic img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Næringsindhold */
+.nutrition {
+    background-color: var(--beige);
+    padding-bottom: 50px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+h4 {
+    font-family: (--tekst);
+    font-size: var(--p);
+    padding-top: 10px;
+}
+
+.nutrition ul li {
+    font-family: (--tekst);
+    font-size: var(--p);
+}
+
 /* Media queries til content */
 @media screen and (min-width: 768px) {
-    .content {
-        margin-right: 300px;
-    }
-    
     /* Produktbillede */
     .imgBox {
         height: 530px;
         width: 50%;
         float: left;
         padding-top: 50px;
+        margin-bottom: 40px;
     }
     
     /* Produktbesrkivelse */
@@ -349,8 +379,9 @@ h2 {
         width: 50%;
         float: right;
         padding-top: 100px;
-        padding-right: 50px;
-        padding-left: 20px;
+        padding-right: 80px;
+        padding-left: 40px;
+        transition: all 0.3s ease;
     }
     
     .details p {
@@ -359,6 +390,24 @@ h2 {
     
     .price {
         margin-top: 10px;
+    }
+    
+    .content button:hover {
+        color: var(--cta);
+        background: var(--hvid);
+    }
+    
+    /* Infographic */
+    .infographic {
+        width: 50%;
+    }
+    
+    /* Næringsindhold */
+    .nutrition {
+        width: 30%;
+        float: right;
+        margin-top: -450px;
+        margin-right: 150px;
     }
 }
 

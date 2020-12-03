@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title></title>
+    <title>Jul</title>
     <meta name="author" content="Louise, Dina og Celine">
     <meta name="description" content="">
     <meta name="keywords" content="">
@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="css/kampagne.css">
     
     <!-- Boxicons -->
-    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'> 
+    <!-- Link til fontawesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
     
 </head>
 
@@ -79,9 +81,98 @@
             </div>
         </nav>
         
+        
     </header>
 
     <main>
+    <!-- Banner + tekst -->
+    <div class="banner">
+    <h1>Jul hos Promenaden</h1>
+    <p>Udforsk vores nye juleproduktlinje - inspireret af alle danskernes jule favoritter.</p>
+    <button><a href="shop.html">Se mere</a></button>
+    </div>
+    
+    <!-- Intro til julekalender -->
+    <div id="effect">
+        <h2>Årets julekalender</h2>
+        <p>Tæl ned til jul med os, og gør julen mere spændende med Promenadens julekalender. Hver advent åbnes en ny låge, hvor der gemmer sig en lille overraskelse. Vær med hver søndag, ved blot at tilmelde dig vores nyhedsbrev nedenfor:</p>
+    
+    
+     <!-- Tekst til nyhedsbrev-->
+    <div class="container">
+        <form action="">
+            <h3>Tilmeld dig vores nyhedsbrev</h3>
+            <p>Tilmeld dig her og deltag i julekalenderen.</p>
+    <!-- Email form-->
+            <div class="email-box">
+            <i class="far fa-envelope"></i>
+            <input class="tbox" type="email" name="" value="" placeholder="Indtast din mail">
+            <button class="btn" type="button" name="button">Tilmeld</button>
+            </div>
+        </form>
+    </div>
+    </div>
+                 
+    <!-- Adventskalder-->
+    <div class="wrapper-calender" id="container">
+        <div class="card">
+		<div class="card__inner">
+			<div class="card__face card__face--front">
+			<img src="images/1.png" alt="images" >
+			</div>
+			<div class="card__face card__face--back">
+				<div class="card__content">
+						<h3>1. advent</h3>
+						<p>Glædelig 1. advent! Tid til søndagshygge. Saml hele familien til julehygge, og prøve denne opskrift:</p>
+						<button><a href="lille-is-1.html">Gå til opskrift</a></button>
+					</div>
+			</div>
+		</div>
+	</div>
+        
+        <div class="box-calender one">
+            <div class="content">
+                <p>2</p>
+            </div>
+        </div>
+        <div class="box-calender two">
+            <div class="content">
+                <img src="images/2.png">
+            </div>
+        </div>
+        <div class="box-calender three">
+            <div class="content">
+                <p>3</p>
+            </div>
+        </div>
+        <!-- SoMe låge -->
+        <div class="box-calender one">
+            <div class="content">
+                <p>Følg også med på facebook</p>
+                <i class='bx bxl-facebook-circle'></i>
+            </div>
+        </div>
+        <div class="box-calender three">
+            <div class="content">
+                <img src="images/3.png">
+            </div>
+        </div>
+        <div class="box-calender four">
+            <div class="content">
+                <img src="images/4.png">
+            </div>
+        </div>
+        <!-- Audio låge -->
+        <div class="box-calender five">
+            <div class="content">
+            <h3>Spark julen i gang med Wham!</h3>
+            <a id="button"><i class='bx bx-play-circle'></i></a>
+            <audio id="player">
+          <source src='media/Wham.mp3' type='audio/mp3'/>
+            </audio>
+            </div>
+        </div>
+    </div>
         
     </main>
 
