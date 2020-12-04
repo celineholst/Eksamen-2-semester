@@ -1,0 +1,9 @@
+
+.imgBox img {
+    width: 35%;
+    filter: drop-shadow(0 0 15px #c1bfb5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+}

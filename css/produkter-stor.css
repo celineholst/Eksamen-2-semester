@@ -1,0 +1,502 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+/* Standard styles */
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS variabler */
+:root {
+    --header-height: 3.5rem;
+    --z-fixed: 100;
+}
+
+/* Farver */
+:root {
+    --beige: #e9e4d6;
+    --cta: #cd3c4b;
+    --blue: #4f5f75;
+    --laks: #d07866;
+    --grey: #3e3e3e;
+    --hvid: #ffffff;
+    --sort: #000000;
+}
+
+/* Tekst */
+:root {
+    --overskrift: 'Playfair Display', serif;
+    --tekst: 'Georgia', sans-serif;
+    --h1-mobil: 32px;
+    --h1-web: 42px;
+    --h2: 24px;
+    --p: 18px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    padding: 0 1rem;
+    z-index: var(--z-fixed);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Navigation */
+ul {
+    font-family: var(--tekst);
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bd-grid {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+/* Hamburger toggle */
+.header_toggle {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+    /* Navigation */
+    .nav {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background-color: var(--hvid);
+        width: 80%;
+        height: 100vh;
+        padding: 2rem 0;
+        z-index: var(--z-fixed);
+        transition: .5s;
+        overflow-y: auto;
+        color: var(--grey);
+    }
+}
+
+/* Menupunkter */
+.nav_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav_item {
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+
+.nav_link {
+    color: var(--grey);
+}
+
+/* Logo */
+.nav_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.nav_img {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.nav_img img {
+    width: 250px;
+}
+
+/* Vis navbar */
+.show {
+    left: 0;
+}
+
+/* Dropdown menu */
+.dropdown_link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dropdown_icon {
+    font-size: 1.3rem;
+    transition: .5s;
+}
+
+.dropdown_menu {
+    margin: 1.5rem 0 0 1rem;
+    display: none;
+    background-color: white;
+}
+
+.dropdown_item {
+    margin-bottom: 1.8rem;
+    font-size: 1.1rem;
+}
+
+.dropdown:hover > .dropdown_menu {
+    display: block;
+}
+
+.dropdown:hover .dropdown_icon {
+    transform: rotate(180deg);
+}
+
+/* Indkøbskurv */
+.cart-nav {
+    right: 0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cart-nav .icon i {
+    font-size: 25px;
+}
+
+.cart-nav .item-numb {
+    font-size: 15px;
+    height: 23px;
+    width: 23px;
+    color: #ff7979;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 22px;
+    background: #ffcccc;
+    border: 1px solid #ffb3b3;
+}
+
+.cart-nav a {
+    color: black;
+}
+
+/* Media queries til header */
+@media screen and (min-width: 768px) {
+    body {
+        margin: 0;
+    }
+
+    /* Header */
+    .header {
+        height: calc(var(--header-height) + 1.8rem);
+    }
+
+    .header_toggle {
+        display: none;
+    }
+
+    /* Navigation */
+    .nav {
+        width: 100%;
+    }
+
+    .nav_content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Logo */
+    .nav_logo {
+        flex-direction: row;
+        text-align: initial;
+        margin-bottom: 0;
+    }
+
+    .nav_img {
+        margin-right: .5rem;
+        margin-bottom: 0rem;
+    }
+
+    .nav_img img {
+        width: 180px;
+    }
+
+    /* Menupunkter */
+    .nav_list {
+        display: flex;
+        align-items: center;
+        float: right;
+    }
+
+    .nav_item {
+        margin: 0 1.5rem;
+        padding: 1.4rem 0;
+    }
+
+    .nav_link {
+        color: var(--sort);
+    }
+
+    /* Dropdown menu */
+    .dropdown {
+        position: relative;
+    }
+
+    .dropdown_menu {
+        position: fixed;
+        margin: 0;
+        top: calc(var(--header-height) + 1rem);
+        padding: .5rem 1rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .bd-grid {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cart-nav {
+        position: absolute;
+        right: 50px;
+    }
+}
+
+/* Produktbillede */
+.imgBox {
+    background-color: var(--beige);
+    height: 280px;
+}
+
+.imgBox img {
+    width: 50%;
+    filter: drop-shadow(0 0 15px #c1bfb5);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 60px;
+}
+
+.imgBox img .guf {
+    width: 50%;
+}
+
+/* Produktbeskrivelse */
+.details {
+    font-family: var(--tekst);
+    margin: 20px;
+    line-height: 1.4;
+}
+
+.details p {
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: var(--overskrift);
+}
+
+h2 {
+    font-family: var(--overskrift);
+}
+
+.price {
+    font-family: var(--overskrift);
+    font-size: 22px;
+    margin-left: 20px;
+    margin-top: -20px;
+}
+
+/* Knap */
+.content button {
+    outline: none;
+    padding: 10px 10px;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    border-radius: 3px;
+    border: 2px solid #cd3c4b;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: var(--hvid);
+    background: var(--cta);
+    float: right;
+    margin-top: -50px;
+    margin-right: 20px;
+}
+
+/* Infographic */
+h3 {
+    font-family: var(--overskrift);
+    font-size: 24px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.infographic img {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Næringsindhold */
+.nutrition {
+    background-color: var(--beige);
+    padding-bottom: 50px;
+    line-height: 1.4;
+    text-align: center;
+}
+
+h4 {
+    font-family: (--tekst);
+    font-size: var(--p);
+    padding-top: 10px;
+}
+
+.nutrition ul li {
+    font-family: (--tekst);
+    font-size: var(--p);
+}
+
+/* Media queries til content */
+@media screen and (min-width: 768px) {
+    /* Produktbillede */
+    .imgBox {
+        height: 530px;
+        width: 50%;
+        float: left;
+        padding-top: 50px;
+        margin-bottom: 40px;
+    }
+    
+    /* Produktbesrkivelse */
+    .content {
+        width: 50%;
+        float: right;
+        padding-top: 100px;
+        padding-right: 80px;
+        padding-left: 40px;
+        transition: all 0.3s ease;
+    }
+    
+    .details p {
+        font-size: var(--p);
+    }
+    
+    .price {
+        margin-top: 10px;
+    }
+    
+    .content button:hover {
+        color: var(--cta);
+        background: var(--hvid);
+    }
+    
+    /* Infographic */
+    .infographic {
+        width: 50%;
+    }
+    
+    /* Næringsindhold */
+    .nutrition {
+        width: 30%;
+        float: right;
+        margin-top: -450px;
+        margin-right: 150px;
+    }
+}
+
+/* Footer */
+.footer {
+    font-size: 1.1rem;
+    padding: 20px 0;
+    line-height: 1.7;
+    font-family: var(--tekst); 
+}
+
+.footer_text,
+.footer_link,
+.footer_title {
+    color: var(--sort);
+    padding: 3px 15px;
+    display: block;
+}
+
+.footer_sections {
+    display: flex;
+    flex-wrap: wrap;
+    padding 0;
+}
+
+.footer_section {
+    width: 100%;
+    padding: 15px 0;
+    flex-shrink: 0;
+}
+
+.footer_title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer_link {
+    text-decoration: none;
+}
+
+.footer_link i {
+   margin-right: 10px;
+}
+
+.footer_section img {
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.copy {
+    font-style: italic;
+    font-size: 1rem;
+}
+
+/* Media queries til footer */
+@media screen and (min-width: 768px) {
+    .footer {
+        bottom: 0;
+    }
+    
+    .footer_section {
+        width: 50%;
+        display: block;
+    margin-left: auto;
+    margin-right: auto;
+        text-align: center;
+    }
+    
+    .footer_text {
+        text-align: center;
+        margin-left: auto;
+    margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    footer_section,
+    .footer_text {
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
