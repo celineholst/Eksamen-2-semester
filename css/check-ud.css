@@ -7,7 +7,6 @@
 ::after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* CSS variabler */
@@ -37,68 +36,239 @@
     --p: 18px;
 }
 
-.card {
-  margin: 100px auto 0;
-  width: 400px;
-  height: 600px;
-  perspective: 1000px;
-    color: black;
-    display: grid;
-    font-size: 40px;
-    place-items: center;
+html {
+    height: 100%;
+    min-height: 1000px;
+}
+
+body {
+    background-color: var(--beige);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: Verdana, Geneva, sans-serif;
+    user-select: none;
+}
+
+/* Tekst styles */
+span {
+    font-family: var(--tekst);
+    font-size: 20px;
+    color: var(--cta);
+}
+
+h1 {
+    font-family: var(--overskrift);
+    font-size: 32px;
+    padding-top: 0;
+    margin-top: 0;
     text-align: center;
-    position: relative;
 }
 
-.card__inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
+p {
+    text-align: justify;
+    font-family: var(--tekst);
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 20px;
 }
 
-.card__inner.is-flipped {
-  transform: rotateY(180deg);
+.label{
+    font-family: var(--tekst);
+    font-size: 18px;
+    display: block;
+}
+
+/* Plus/minus placeholder */
+button {
+    background-color: var(--cta);
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-family: var(--tekst);
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    transition: .5s;
+}
+
+button:hover {
+    background: var(--cta);
+    color: #000;
+}
+
+#tal {
+    border: none;
+    outline: none;
+    font-family: var(--tekst);
+    font-size: 20px;
+    background: transparent;
+    margin: 10px;
+}
+
+/* Tilføj/fjern placeholders */
+a img {
+    width: 10px;
+}
+
+.add {
+    margin: -1px;
+}
+
+.remove_button {
+    margin: 5px;
+}
+
+/* Svg progress */
+#svg_form_time {
+    height: 20px;
+    max-width: 80%;
+    margin: 40px auto 20px;
+    display: block;
+}
+
+#svg_form_time circle,
+#svg_form_time rect {
+    fill: Black;
+}
+
+/* Næste/forrige knapper */
+.knap-container {
+    text-align: center;
+}
+
+.knap {
+    background: var(--cta);
+    border-radius: 5px;
+    padding: 10px 15px;
+    display: inline-block;
+    margin: 10px;
+    font-family: var(--tekst);
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px rgb(0,0,0,0.5);
+    transition: .5s;
+}
+
+.betal {
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+.betal:hover {
+    background: var(--cta);
+    color: #black;
+}
+
+.knap:hover {
+    background: var(--cta);
+    color: #000;
+}
+
+.disabled {
+    display: none;
+}
+
+/* Form styles */
+section {
+    padding: 30px;
+    height: auto;
+    max-width: 300px;
+    margin: 30px auto;
+    background: white;
+    background: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    margin: 10px 0px;
+    display: inline-block;
+    padding: 15x 25px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #d4d4d4;
+    font-size: 1em;
+    font-family: inherit;
+    background: white;
+}
+
+.field_wrapper input {
+    width: 90%;
+}
+
+#map{
+     
+    margin-top: 10px;
+    padding-right: 130px;
+    bottom: 0;
+    height: 300px;
+    width: 175px;
+}
+
+h2{
+    font-family: var(--tekst);
+    font-size: 18px;
+    padding-top: 10px;
 }
 
 
-.card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
-  border-radius: 16px;
-  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
+/* Media queries til checkout form*/
+@media screen and (min-width: 768px){
+    .main{
+        bottom: 0;
+    }
+
+  /* Tekst styles */
+span {
+    font-size: 24px;
+}  
+
+h1 {
+    font-size: 48px;
 }
 
-.card__face--front {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+p {
+    font-size: 30px;
 }
 
-.card__face--back {
-  background-color: var(--light);
-  transform: rotateY(180deg);
+.label{
+    font-size: 24px;
 }
 
-.card__content {
-  width: 100%;
-  height: 100%;
+/* Form styles */
+section {
+    padding: 50px;
+    max-width: 400px;
+ 
+}
+    
+    #map{
+        height: 300px;
+        width: 130px;
+        margin-left: 60px;
+    }
+       
+    
+
+/* Svg progress */
+#svg_form_time {
+    height: 24px;
+    max-width: 80%;
 }
 
-.card__content h3 {
-  color: var(--dark);
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 15px;
+
+    
+    .knap {
+    padding: 15px 28px;
+    
+    
 }
 
-.card__content p {
-  color: var(--dark);
-  font-size: 18px;
-  line-height: 1.4;
-}

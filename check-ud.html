@@ -7,13 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title></title>
+    <title>Check ud</title>
     <meta name="author" content="Louise, Dina og Celine">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Vi mangler blot dine personlige oplysninger, så vi kan sende din ordre afsted.">
+    <meta name="keywords" content="Check ud, udfyld, betal, betaling, E-mail, Fornavn, Efternavn, Adresse, Kort, Telefonnummer, Land, Postnummer, By, Kortholder, Kortnummer, Udløbsdato, CVC, Betalingsinformation, Forrige, Næste, videre, Mapbox, Personlige oplysninger, Leveringsinfomation, Promenaden">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/check-ud.css">
+    <link href="css/jquery.nice-number.css" rel="stylesheet">
+    
+    <!-- mapbox -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
+        
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css"/>
+    
     
 </head>
 
@@ -24,22 +33,70 @@
     </header>
 
     <main>
-        <div class="card">
-		<div class="card__inner">
-			<div class="card__face card__face--front">
-			<img src="images/info-julestok.png" alt="images">
-			</div>
-			<div class="card__face card__face--back">
-				<div class="card__content">
-						<h3>1. advent</h3>
-						<p>Lorem ipsum <strong>dolor</strong> sit amet, consectetur <strong>adipiscing</strong> elit. Sed id erat a magna lobortis dictum. Nunc est arcu, <strong>lacinia</strong> quis sapien placerat, <strong>laoreet</strong> tincidunt nulla.</p>
-					</div>
-			</div>
-		</div>
-	</div>
-	
-	
-   
+       
+         <!-- Processbar -->
+        <div id="svg_wrap"></div>
+
+        <!-- Checkout -->
+        <h1>Checkout</h1>
+
+        <!-- Personlige oplysninger -->
+        <section>
+            <p>Personlige oplysninger</p>
+            <label class="label">E-mail<span>*</span></label>
+            <input type="text">
+            <label class="label">Fornavn<span>*</span></label>
+            <input type="text">
+            <label class="label">Efternavn<span>*</span></label>
+            <input type="text">
+            <label class="label">Telefonnummer<span>*</span></label>
+            <input type="text">
+        </section>
+        
+        <!-- Leveringsinformation-->
+         <section>
+            <p>Leveringsoplysninger</p>
+            <label class="label">Land<span>*</span></label>
+            <input type="text">
+            <label class="label">Adresse<span>*</span></label>
+            <input type="text">
+            <label class="label">Postnummer<span>*</span></label>
+            <input type="text">
+            <label class="label">By<span>*</span></label>
+            <input type="text">
+        
+           <!-- Map -->
+            <h2>Vælg leveringsted</h2>
+           <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+           <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+           <div id="map"></div>
+        </section>
+        
+        
+        <!-- Betalingsinformation -->
+        <section>
+            <p>Betalingsinformation</p>
+            <label class="label">Subtotal</label>
+            <input type="text" placeholder="DKK"/>
+            <label class="label">Kortholders 
+            navn<span>*</span></label>
+            <input type="text">
+            <label class="label">Kortnummer<span>*</span></label>
+            <input type="text">
+            <label class="label">Udløbsdato<span>*</span></label>
+            <input type="text" placeholder="MM/YY"/>
+            <label class="label">CVC<span>*</span></label>
+            <input type="text" placeholder="XXX"/>
+        </section>
+        
+        <!-- Knapper -->
+        <div class="knap-container">
+        <div class="knap" id="prev">&larr; FORRIGE</div>
+        <div class="knap" id="next">NÆSTE &rarr;</div>
+        <div class="knap" id="submit"><a href="reward.html" class="betal">VIDERE</a></div>
+        </div>
+          
+        
     </main>
 
     <footer>
@@ -51,6 +108,7 @@
 
     <!-- JavaScript -->
     <script src="js/check-ud.js"></script>
+    
     
 </body>
 
