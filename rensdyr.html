@@ -5,18 +5,15 @@
    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ 
     <!-- SEO -->
-    <title>Promenaden Sønderborg</title>
+    <title>Rensdyr</title>
     <meta name="author" content="Louise, Dina og Celine">
-    <meta name="description" content="Promenaden i sønderborg byder på lækre produkter og gratis opskrifter">
-    <meta name="keywords" content="promenaden, sønderborg, is, chokolade, nødder, julekampagne, kvalitet, lokale råvarer, opskirfter, snacks, desserter">
+    <meta name="description" content="opskrift på spiselige rensdyr og andre lækre sager">
+    <meta name="keywords" content="rendyr, rudolf, gevir, jul, marshmallows, julesmåkager, småkager, sukker, mel, smør, æg, chokolade, sjov, børn, bag, julebag, pynt, opskrift">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
-    
-    <!-- link til stylesheet til box animation -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/rensdyr.css">
     
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -24,6 +21,7 @@
 </head>
 
 <body>
+
     <header class="header">
     <!-- Navigation -->
         <!-- Hamburger toggle -->
@@ -82,56 +80,59 @@
         </nav>
         
     </header>
+
     <main>
-        <!-- split screen øverst på siden -->
-        <div class="split-screen">
-            <div class="left">
-                <img class="sne" src="images/snow3.gif">
-            </div>
-        </div>
-        <div class="right">
-            <section class="copy">
-                    <h1> Velkommen til Promenaden!</h1>
-                    <p> Her på siden kan du se alle vores nye produkter og kampagner</p>
-                <button class="knap"><a href="kampagne.html">Se julekampagne</a>
-          </button>
-            </section> 
-        </div> 
-     
-    <!-- Tekst om promenaden -->
-        <h2 class="osk"> Essensen af Promenaden</h2>
-        <p class="oska"> Hos os er kvalitet og gode smagsoplevelser i højsædet. Vi har stor fokus på, at alle ingredienserne i vores produkter er af højeste kvalitet, for at sikre en god smagsoplevelse – hver gang! <br>
-            Dette gør vi ved at have en tæt korrespondance mellem vores forskellige leverandører, som ofte befinder sig i lokalområdet. 
-            </p>
         
-        <!-- boks 1 der glider ind -->
-        <div class="container">
+        <!-- split screen øverst --> 
+        <div class="alt"> 
+
+            <section class="col-1">
+            <img class="snemand1" src="images/snemand-ja.jpg"> 
+            </section>
             
-            <section class="card" data-aos="fade-left">
-                <img src="images/produkter.jpg" alt="">
-                <div>
-                <h2> Har du brug for inspiration?</h2>    
-                <p> Vi har lavet en masse lækre opskrifter, som du frit kan følge her på siden.</p>
-                <button class="knap"><a href="opskrifter.html">Se opskrifter</a>
-                </button>
-                </div>
+            <section class="col-2"> 
+            <h2 class="tekst"> Rensdyr </h2>
+                <p class="beskrivelse"> Bløde Marshmallows på pind, formet som rensdyr med sprøde gevir.
+                </p>
+                <p class="info"> 6 stk. 15 min.</p>
                 </section>
             
-            <!-- boks 2 der glider ind -->
-            <section class="card" data-aos="fade-right">
-                <img src="images/forside-produkter.png" alt="image">
-                <div>
-                <h2> Lækkersulten?</h2>    
-                <p> Hos os kan du købe alverdens delikatesser, som oven i købet er lavet på lokale råvarer.</p>
-                <button class="knap"><a href="shop.html">Se produkter</a>
-                </button>
-                </div>
+     <!-- opskrift -->       
+            <section class="col-3">
+            <img class="rør" src="images/r%C3%B8remaskine.png"> 
+            <h2 class="ingredienser"> Du skal bruge:</h2>
+                <p class="in-list"> Hvide skumfiduser <br>
+                1 pose saltkringler <br>
+                Røde chokoladelinser <br>
+                50 g. mørk chokolade <br>
+                Slikkepindspinde 
+                </p>
+                <img class="snemand2" src="images/Snowman-Cookies-1.jpg">
                 </section>
+    
+    <section class="col-4">
+        <img class="vægt" src="images/v%C3%A6gt.png">
+        <h2 class="todo"> Sådan gør du:</h2>
+        <p class="vejl">
+            1.	Stik pinden op i skumfiduser. Imens kan du med fordel varme den mørke chokolade over et vandbad.  <br><br>
+            2.	Kom pindene i en oasis eller lignende for at skabe mere stabilitet, når du skal til at pynte dine rensdyr.  <br><br>
+            3.	Skær forsigtigt saltkringlerne i halve. Blødgør herefter toppen af skumfiduserne, og sæt to halve saltkringler på toppen.   <br><br>
+            4.	Kom den smeltede chokolade i en sprøjtepose, og klip et lille hul i enden af posen. Sprøjt to øjne på skumfidusen, og herefter en lille prik til næsen. Sæt en rød chokoladelise på chokolade prikken, og sådan! 
+            </p>
+    </section>
+        
             
-            </div>   
+      
+        
+        
+   </div> 
+            
+           
+    <img class="ban" src="images/pynt-nej.png">    
+    
     </main>
 
-   <footer class="footer">
+    <footer class="footer">
     <!-- Footer -->
         <!-- Sektion 1 -->
         <div class="footer_text box">
@@ -165,21 +166,11 @@
         </div>
     </footer>
 
-
     <!-- jQuery library -->
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- JavaScript -->
-    <script src="js/js.js"></script>
-    
-    <!-- link til JS fil fra github og ændring af hastighed-->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-        offset: 400,
-        duration: 1000
-    });
-  </script>
+    <script src="js/shop.js"></script>
     
 </body>
 

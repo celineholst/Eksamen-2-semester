@@ -220,50 +220,6 @@ a {
     .nav_link {
         color: var(--sort);
     }
-    
-    .search-box{
-        margin-top: 37px;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: white;
-        height: 40px;
-        border-radius:40px;
-        padding-right: 50px;
-        position: relative;
-        
-    }
-    
-    .search-box:hover > .search-txt{
-        width: 150px;
-        padding: 0 6px;
-    }
-    
-    .search-btn{
-        color: black;
-        float: right;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .search-txt{
-        border:none;
-        background: none;
-        outline: none;
-        float: left;
-        padding: 0;
-        color: black;
-        font-size: 16px;
-        transition: 0.4s;
-        line-height: 40px;
-        width: 0px;
-        
-    }
-    
 
     /* Dropdown menu */
     .dropdown {
@@ -285,205 +241,199 @@ a {
         margin-right: auto;
     }
 }
-    
+/* splitscreen øverst */
+.snemand1{
+    width: 520px;
+    height: auto;
 }
 
-
-
-.split-screen{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, manmax(2.5rem, 1fr));
-}
-
-.left{
-    height: 300px;
-}
-
-.left, .right{
-  display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.left{
-    background-image: url(../images/kageop.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0,5));
-    background-size:  cover;
-    
-}
-
-.right{
-    padding-bottom: 60px;
-}
-
-.right .copy{
-    text-align: center;
-}
-
-.right p{
-    font-family: 'Georgia', sans-serif;
-    font-size: 24px;
-    margin-top: 30px;
-    font-style: normal;
-
-}
-
-.right h1{
+.tekst{
     font-family: 'Playfair Display', serif;
-    font-size: 32px;
-    margin-top: 35px;
-    font-style: normal;
-    
-}
-.right{
-    background: #e9e4d6;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.knap{
-    
-    margin-top: 30px;
-    margin-bottom: 55px;
-    font-weight: bold;
-    font-family: 'Georgia', sans-serif;
-    font-size: 16px;
-    text-decoration: none;
-    padding: 10px 10px;
-    border-radius: 3px;
-    border: 2px solid #cd3d4b;
-    cursor: pointer;
-    outline: none;
-    background: var(--cta);
-    text-transform: uppercase;
-}
-
-.knap a {
-    color: var(--hvid);
-    text-decoration: none;       
-}
-
-
-/* madia til split screen */
-@media screen and (min-width: 700px) {
-    
-    .left , .right {
-       width: 50%;
-    }
-    
-    .left {
-        float: left;
-        height: 666px;
-    }
-    
-    .right{
-        height: 666px;
-    }
-    .right h1{
-      font-size: 42px;
-        margin-top: -30px;
-    }
-    
-    .right p{
-        margin-top: 40px;
-    }
-    
-    .knap{
-       margin-top: 50px;
-        margin-bottom: 0px;
-        transition: all 0.3s ease;
-    }
-    
-    .knap:hover {
-        background: var(--hvid);
-    }
-    
-    .knap a:hover {
-    color: var(--cta);
-    }
-    
-    
-    
-     
-}
-
-.osk{
-    font-family: 'Playfair Display', serif;
+.beskrivelse{
     font-size: 24px;
-    text-align: center;
-    margin-top: 25px;
-}
-
-.oska{
     font-family: 'Georgia', sans-serif;
-    font-size: 18px;
     text-align: center;
-    margin-left: 190px;
-    margin-right: 190px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 258px;
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    
 }
 
-/* Media queries til tekststykke */
+.info{
+   font-family: 'Georgia', sans-serif;
+    margin-left: 20px;
+}
+
+
+/* Media queries til split-screen */
 @media screen and (max-width: 700px) {
-    .oska{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
+    .snemand1{
+        width: 270px;
+        height: auto;
+        margin: 20px;
+    }
     
-}
+    .tekst{
+        margin: 0;
+    }
+    
+    .beskrivelse{
+        margin-bottom: 20px;
+        margin-top: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .info{
+        margin: 0;
+        text-align: center;
+    }
+
 }
 
-.container{
-    max-width: 1100px;
+/* opskriften */
+.alt{
+   max-width: 1100px;
     margin: auto;
     overflow: auto;
     padding: 0 2rem;
-    margin-top: 60px;
+    margin-top: 60px; 
+}
+
+.col-1{
+    width: 50%;
+    float: left;
+    background-color: #e9e4d6;
+}
+
+.col-2{
+    width: 50%;
+    float: right;
+    background-color: #e9e4d6;
+   
+}
     
+.col-3{
+    width: 50%;
+    float: left;
+    background-color: #e9e4d6;
 }
 
-img{
-    width 100%;
-}
-
-.card{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
-    background: #4f5f75;
-    margin-bottom: 2rem;
-}
-
-.card h2{
-    margin-bottom: 2rem;
-    color: white;
-}
-
-.card p{
-    color: white;
+.col-4{
+    width: 50%;
+    float: right;
+    background-color: #e9e4d6;
+   
 }
 
 
-.card img{
-    400px;
+
+.rør, .vægt{
+    height: 90px;
+    width: auto;
+    margin-top: 20px;
+}
+
+.ingredienser{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    margin-left: 110px;
+    margin-top: -32px;
+}
+
+.in-list{
+    font-size: 18px;
+    font-family: 'Georgia', sans-serif;
+    margin-left: 110px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
     
+.snemand2{
+    height: auto;
+    width: 300px;
+    margin-left: 100px;
+}
+.vægt{
+    margin-left: 440px;
 }
 
-.card > div{
-    padding: 2rem;
-    
+.todo{
+    margin-top: -32px;
+    margin-left: 20px;
 }
 
-/*her bestemmes, at hver anden boks skal have tekst først og så billede */
-.card:nth-child(even) img{
-    order: 2;
+.vejl{
+  font-size: 18px;
+    font-family: 'Georgia', sans-serif;
+    margin-top: 10px;
+    margin-right: 110px;
+    margin-left: 20px;
+    margin-bottom: 223px;
 }
 
-/* Media queries til bokse */
+/* Media queries til opskriften */
 @media screen and (max-width: 700px) {
-    .card{
-        display: block;
+    .col-1{
+        width: 100%;
+    }
+    
+    .col-2{
+        width: 100%;
+    }
+    
+    .col-3{
+        width: 100%;
+    }
+    
+    .col-4{
+        width: 100%;
+    }
+    
+    
+    .rør, .vægt {
+        margin-left: 130px;
+    }
+    
+    .ingredienser, .todo{
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+    
+    .in-list{
+        text-align: center;
+        margin: 0;
+    }
+    
+    .vejl{
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+    
+    .snemand2{
+        width: 270px;
+        height: auto;
+        margin: 20px;
     }
 }
+
+.ban{
+    width: 100%;
+    height: auto;
+}
+
 
 /* Footer */
 .footer {

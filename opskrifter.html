@@ -7,13 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- SEO -->
-    <title></title>
+    <title>Opskrifter</title>
     <meta name="author" content="Louise, Dina og Celine">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="hjemmeside med opskrifter til desserter og snacks.">
+    <meta name="keywords" content="opskrifter, dessert, kage, snacks, lækkersulten, snemand, juelsmåager, småkager, jul, marshmallows, julehjerter, juelstokke, rensdyr, rudolf, ">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/opskrifter.css">
+   
+    <!-- link til stylesheet til box animation -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -71,7 +74,12 @@
                             <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Dessert</a></li>
                             <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Snacks</a></li>
                         </ul>
-                        
+                    </li>
+                    <li class="search-box">
+                            <input class="search-txt" type="text" name="" placeholder="Søg her">
+                        <a class="search-btn" href="#">
+                            <i class='bx bx-search'></i>
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -82,7 +90,65 @@
     </header>
 
     <main>
+      <!-- split screen NY -->
+        <div class="split-screen">
+            <div class="left">
+            </div>
+        </div>
+        <div class="right">
+            <section class="copy">
+                    <h1> Opskrifter</h1>
+                    <p> Her på siden kan du se alle vores lækre og smagsfulde opskrifter</p>
+            </section> 
+        </div> 
+     
+        <h2 class="osk"> Lækkersulten?</h2>
+        <p class="oska"> Her på siden finder du alverdens kreative opskrifter på desserter og søde snacks. 
+ </p>
         
+        <div class="container">
+            
+            <section class="card" data-aos="fade-left">
+                <img src="images/produkter.jpg" alt="">
+                <div>
+                <h2> Smeltede snemænd</h2>    
+                <p> De perfekte julesmåkager, dekoreret som små  smeltede snemænd, med glasur og Marshmallows.</p>
+                <button class="knap"><a href="snemand.html">Se opskrift</a>
+                </button>
+                </div>
+                </section>
+            
+            <section class="card" data-aos="fade-right">
+                <img src="images/produkter.jpg" alt="">
+                <div>
+                <h2> Flettede julehjerter</h2>    
+                <p> Lækre julesmåkager formet som flettede julehjerter.</p>
+                <button class="knap"><a href="julehjerte.html">Se opskrift</a>
+                </button>
+                </div>
+                </section>
+            
+            <section class="card" data-aos="fade-left">
+                <img src="images/produkter.jpg" alt="">
+                <div>
+                <h2> Julestokke</h2>    
+                <p> Knasende julesmåkager formet som julestokke.</p>
+                <button class="knap"><a href="julestok.html">Se opskrift</a>
+                </button>
+                </div>
+                </section>
+            
+            <section class="card" data-aos="fade-right">
+                <img src="images/produkter.jpg" alt="">
+                <div>
+                <h2> Rensdyr</h2>    
+                <p> Bløde Marshmallows på pind, formet som rensdyr med sprøde gevir.</p>
+                <button class="knap"><a href="rensdyr.html">Se opskrift</a>
+                </button>
+                </div>
+                </section>
+            
+            </div>     
     </main>
 
     <footer class="footer">
@@ -124,6 +190,15 @@
 
     <!-- JavaScript -->
     <script src="js/opskrifter.js"></script>
+    
+    <!-- link til JS-fil fra github og ændring af hastighed-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 400,
+        duration: 1000
+    });
+  </script>
     
 </body>
 

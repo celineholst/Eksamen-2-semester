@@ -39,7 +39,6 @@
 
 /* Header */
 .header {
-    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -49,6 +48,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    background-color: white;
 }
 
 /* Navigation */
@@ -231,6 +231,7 @@ a {
         margin: 0;
         top: calc(var(--header-height) + 1rem);
         padding: .5rem 1rem;
+        background-color: white;
     }
 }
 
@@ -238,6 +239,210 @@ a {
     .bd-grid {
         margin-left: auto;
         margin-right: auto;
+    }
+}
+    
+}
+
+/* styling af split-screen øvers på siden*/
+.split-screen{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, manmax(2.5rem, 1fr));
+}
+
+.left{
+    height: 300px;
+}
+
+.left, .right{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left{
+    background-image: url(../images/isisis.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0,5));
+    background-size:  cover;
+    
+}
+
+.right .copy{
+    text-align: center;
+}
+
+.right p{
+    font-family: 'Georgia', sans-serif;
+    font-size: 24px;
+    margin-top: 15px;
+    font-style: normal;
+}
+
+.sne{
+    width: 100%;
+    height: 300px;
+}
+
+.right h1{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-top: 35px;
+    font-style: normal;
+    
+}
+.right{
+    background: #e9e4d6;
+}
+
+.knap{
+    
+    margin-top: 30px;
+    margin-bottom: 55px;
+    font-weight: bold;
+    font-family: 'Georgia', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: 2px solid #cd3d4b;
+    cursor: pointer;
+    outline: none;
+    background: var(--cta);
+    text-transform: uppercase;
+}
+
+.knap a {
+    color: var(--hvid);
+    text-decoration: none;       
+}
+
+
+/* madia queries til split-screen */
+@media screen and (min-width: 700px) {
+    
+    .left , .right {
+       width: 50%;
+    }
+    
+    .left {
+        float: left;
+        height: 666px;
+    }
+    
+    .right{
+        height: 666px;
+    }
+    .right h1{
+      font-size: 42px;
+        margin-top: -30px;
+    }
+    
+    .right p{
+        margin-top: 40px;
+    }
+    
+    .knap{
+       margin-top: 50px;
+        margin-bottom: 0px;
+        transition: all 0.3s ease;
+    }
+    
+    .knap:hover {
+        background: var(--hvid);
+    }
+    
+    .knap a:hover {
+    color: var(--cta);
+    }
+    
+    .sne{
+    width: 100%;
+        height: 600px;
+    }
+    
+    
+     
+}
+
+/* tekst om promenaden */
+.osk{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.oska{
+    font-family: 'Georgia', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Media queries til tekststykke */
+@media screen and (max-width: 700px) {
+    .oska{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+}
+
+/* styling af bokse der glider ind */
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    
+}
+
+img{
+    width 100%;
+}
+
+.card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background: #4f5f75;
+    margin-bottom: 2rem;
+}
+
+.card h2{
+    margin-bottom: 2rem;
+    color: white;
+}
+
+.card p{
+    color: white;
+}
+
+
+.card img{
+    400px;
+    
+}
+
+.card > div{
+    padding: 2rem;
+    
+}
+
+/*her bestemmes, at hver anden boks skal have tekst først og så billede, og omvendt med de andre bokse */
+.card:nth-child(even) img{
+    order: 2;
+}
+
+/* Media queries til bokse */
+@media screen and (max-width: 700px) {
+    .card{
+        display: block;
+        
     }
 }
 
@@ -297,7 +502,6 @@ a {
 /* Media queries til footer */
 @media screen and (min-width: 768px) {
     .footer {
-        position: fixed;
         bottom: 0;
     }
     
