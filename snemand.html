@@ -2,7 +2,7 @@
 <html lang="da">
 
 <head>
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -14,164 +14,161 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/snemand.css">
-    
+
     <!-- Boxicons -->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-    
+
 </head>
 
 <body>
 
     <header class="header">
-    <!-- Navigation -->
+        <!-- Navigation -->
         <!-- Hamburger toggle -->
         <div class="header_toggle">
-        <i class="bx bx-menu" id="header-toggle"></i>
+            <i class="bx bx-menu" id="header-toggle"></i>
         </div>
-        
+
         <!-- Menu -->
         <nav class="nav" id="nav-menu">
             <div class="nav_content bd-grid">
-            <!-- Logo -->
-            <a href="index.html" class="nav_logo">
-                <div class="nav_img">
-                    <img src="images/logo.png" alt="logo">
+                <!-- Logo -->
+                <a href="index.html" class="nav_logo">
+                    <div class="nav_img">
+                        <img src="images/logo.png" alt="logo">
+                    </div>
+                </a>
+
+                <!-- Menupunkter -->
+                <div class="nav_menu">
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="index.html" class="nav_link">Hjem</a></li>
+
+                        <!-- Dropdown menu -->
+                        <li class="nav_item dropdown">
+                            <a href="#" class="nav_link dropdown_link">Shop<i class='bx bx-chevron-down dropdown_icon'></i></a>
+
+                            <!-- Dropdown punkter -->
+                            <ul class="dropdown_menu">
+                                <li class="dropdown_item"><a href="shop.html" class="nav_link">Is</a></li>
+                                <li class="dropdown_item"><a href="shop.html" class="nav_link">Chokolade</a></li>
+                                <li class="dropdown_item"><a href="shop.html" class="nav_link">Nødder</a></li>
+                                <li class="dropdown_item"><a href="shop.html" class="nav_link">Tilbehør</a></li>
+                            </ul>
+
+                        </li>
+
+
+                        <li class="nav_item"><a href="kampagne.html" class="nav_link">Jul</a></li>
+
+                        <!-- Dropdown menu -->
+                        <li class="nav_item dropdown">
+                            <a href="#" class="nav_link dropdown_link">Opskrifter<i class='bx bx-chevron-down dropdown_icon'></i></a>
+
+                            <!-- Dropdown punkter -->
+                            <ul class="dropdown_menu">
+                                <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Kager</a></li>
+                                <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Dessert</a></li>
+                                <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Snacks</a></li>
+                            </ul>
+
+                        </li>
+                    </ul>
                 </div>
-            </a>
-            
-            <!-- Menupunkter -->
-            <div class="nav_menu">
-                <ul class="nav_list">
-                    <li class="nav_item"><a href="index.html" class="nav_link">Hjem</a></li>
-                    
-                    <!-- Dropdown menu -->
-                    <li class="nav_item dropdown">
-                        <a href="#" class="nav_link dropdown_link">Shop<i class='bx bx-chevron-down dropdown_icon'></i></a>
-                        
-                        <!-- Dropdown punkter -->
-                        <ul class="dropdown_menu">
-                            <li class="dropdown_item"><a href="shop.html" class="nav_link">Is</a></li>
-                            <li class="dropdown_item"><a href="shop.html" class="nav_link">Chokolade</a></li>
-                            <li class="dropdown_item"><a href="shop.html" class="nav_link">Nødder</a></li>
-                            <li class="dropdown_item"><a href="shop.html" class="nav_link">Tilbehør</a></li>
-                        </ul>
-                        
-                    </li>
-                    
-                    
-                    <li class="nav_item"><a href="kampagne.html" class="nav_link">Jul</a></li>
-                    
-                    <!-- Dropdown menu -->
-                    <li class="nav_item dropdown">
-                        <a href="#" class="nav_link dropdown_link">Opskrifter<i class='bx bx-chevron-down dropdown_icon'></i></a>
-                        
-                        <!-- Dropdown punkter -->
-                        <ul class="dropdown_menu">
-                            <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Kager</a></li>
-                            <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Dessert</a></li>
-                            <li class="dropdown_item"><a href="opskrifter.html" class="nav_link">Snacks</a></li>
-                        </ul>
-                        
-                    </li>
-                </ul>
-            </div>
-            
+
             </div>
         </nav>
-        
+
     </header>
 
-    <main>  
-           
-        
-        
-        
-           <!-- split screen øverst --> 
-        <div class="alt"> 
+    <main>
 
-            <section class="col-1">
-            <img class="snemand1" src="images/snemand-ja.jpg"> 
-            </section>
-            
-            <section class="col-2"> 
-            <h2 class="tekst"> Smeltede snemænd </h2>
-                <p class="beskrivelse"> De perfekte julesmåkager, dekoreret som små  smeltede snemænd, med glasur og Marshmallows.
+        <!-- Split screen øverst -->
+        <div class="alt">
+
+            <div class="col-1">
+                <img class="snemand1" src="images/snemand-ja.jpg" alt="image">
+            </div>
+
+            <section class="col-2">
+                <h2 class="tekst"> Smeltede snemænd </h2>
+                <p class="beskrivelse"> De perfekte julesmåkager, dekoreret som små smeltede snemænd, med glasur og Marshmallows.
                 </p>
                 <p class="info"> 10 stk. 2 timer</p>
-                </section>
-            
-     <!-- opskrift -->       
-            <section class="col-3">
-            <img class="rør" src="images/r%C3%B8remaskine.png"> 
-            <h2 class="ingredienser"> Du skal bruge:</h2>
-                <p class="in-list"> Småkager: <br>
-                100 g sukker <br>
-                20 g brun farin <br>
-                250 g hvedemel <br>
-                140 g smør, stuetemperatur <br>
-                1 æg <br><br>
+            </section>
 
-                Toppings: <br>
-                175 g flormelis <br>
-                1 æggehvide <br>
-                Hvide skumfiduser <br>
-                Smeltechokolade <br>
-                Sort og orange pastafarve 
+            <!-- Opskrift -->
+            <section class="col-3">
+                <img class="ror" src="images/r%C3%B8remaskine.png" alt="image">
+                <h2 class="ingredienser"> Du skal bruge:</h2>
+                <p class="in-list"> Småkager: <br>
+                    100 g sukker <br>
+                    20 g brun farin <br>
+                    250 g hvedemel <br>
+                    140 g smør, stuetemperatur <br>
+                    1 æg <br><br>
+
+                    Toppings: <br>
+                    175 g flormelis <br>
+                    1 æggehvide <br>
+                    Hvide skumfiduser <br>
+                    Promenaden 61% mørk chokolade <br>
+                    Sort og orange pastafarve
                 </p>
-                </section>
-    
-    <section class="col-4">
-        <img class="vægt" src="images/v%C3%A6gt.png">
-        <h2 class="todo"> Sådan gør du:</h2>
-        <p class="vejl">
-            1.	Rør sukker og hvedemel sammen til det er ensartet. Smuldr smøret i sukker/mel-blandingen. Kom ægget i og ælt dejen hurtigt sammen - stop lige så snart, den er ensartet. <br><br>
-            2.	Del dejen i to og put dem i hver deres frysepose og kom på køl. (hvis man arbejder med hele portionen på én gang, bliver den for blød). Den skal være helt koldt, før du kan arbejde med den (en time måske) <br><br>
-            3.	Tænd ovnen på 180 grader varmluft <br><br>
-            4.	Tag den ene kugle ud af køleskabet. Drys bordet med en smule mel, så hænger dejen ikke fast. Rul dejen ud med en kagerulle til den er 3 mm over det hele. Udstik først med stor udstikker (rund til snemændene, forskellige former til pynt + hul!) på bageplade. <br><br>
-            5.	Bag i 15 min og lad dem efterfølgende køle af på køkkenbordet.
-        </p>
-    </section>
-        
+            </section>
+
+            <section class="col-4">
+                <img class="vogt" src="images/v%C3%A6gt.png" alt="image">
+                <h2 class="todo"> Sådan gør du:</h2>
+                <p class="vejl">
+                    1. Rør sukker og hvedemel sammen til det er ensartet. Smuldr smøret i sukker/mel-blandingen. Kom ægget i og ælt dejen hurtigt sammen - stop lige så snart, den er ensartet. <br><br>
+                    2. Del dejen i to og put dem i hver deres frysepose og kom på køl. (hvis man arbejder med hele portionen på én gang, bliver den for blød). Den skal være helt koldt, før du kan arbejde med den (en time måske) <br><br>
+                    3. Tænd ovnen på 180 grader varmluft <br><br>
+                    4. Tag den ene kugle ud af køleskabet. Drys bordet med en smule mel, så hænger dejen ikke fast. Rul dejen ud med en kagerulle til den er 3 mm over det hele. Udstik først med stor udstikker (rund til snemændene, forskellige former til pynt + hul!) på bageplade. <br><br>
+                    5. Bag i 15 min og lad dem efterfølgende køle af på køkkenbordet.
+                </p>
+            </section>
+
             <section class="col-5">
-            <h2 class="pynt"> Pyntning:</h2>
-            <p class="pynt-list">
-                1.	Kom æggehvide og flormelis i en skål og pisk til det er sejt. <br><br>
-                2.	Læg en spsk af glasuren på småkagen og brug bagsiden af en spiseske til at brede den ud - dette udgør den smeltede del af snemanden. Sæt en skumfidus af passende størrelse fast i glasuren - her er de blevet halvveret, for at passe bedst. Lad det tørre. <br><br>
-                3.	Smelt chokoladen over vandbad eller i mircrobølgeovn. På bagepapir former du små grene med en tandstik eller lign., som skal gøre det ud for armene. Sørg for, at de er tykke nok, så de ikke knækker eller smelter, så snart du rør ved dem med varme fingre. Dyp en tandstik i sort pastafarve og "dup" knapper og øjne på snemanden. <br><br>
-                4.	Afslut med en orange streg som gulrerodsnæsen.
-            </p>    
-    </section>
-      
-        <section class="col-6">
-            <img class="snemand2" src="images/Snowman-Cookies-1.jpg">
-        
-        </section>
-        
-   </div> 
-            
-           
-    <img class="ban" src="images/pynt-nej.png">     
-    
+                <h2 class="pynt"> Pyntning:</h2>
+                <p class="pynt-list">
+                    1. Kom æggehvide og flormelis i en skål og pisk til det er sejt. <br><br>
+                    2. Læg en spsk af glasuren på småkagen og brug bagsiden af en spiseske til at brede den ud - dette udgør den smeltede del af snemanden. Sæt en skumfidus af passende størrelse fast i glasuren - her er de blevet halvveret, for at passe bedst. Lad det tørre. <br><br>
+                    3. Smelt chokoladen over vandbad eller i mircrobølgeovn. På bagepapir former du små grene med en tandstik eller lign., som skal gøre det ud for armene. Sørg for, at de er tykke nok, så de ikke knækker eller smelter, så snart du rør ved dem med varme fingre. Dyp en tandstik i sort pastafarve og "dup" knapper og øjne på snemanden. <br><br>
+                    4. Afslut med en orange streg som gulrerodsnæsen.
+                </p>
+            </section>
+
+            <div class="col-6">
+                <img class="snemand2" src="images/Snowman-Cookies-1.jpg" alt="image">
+
+            </div>
+
+        </div>
+
+
+        <img class="ban" src="images/pynt-nej.png" alt="image">
+
     </main>
 
     <footer class="footer">
-    <!-- Footer -->
+        <!-- Footer -->
         <!-- Sektion 1 -->
         <div class="footer_text box">
-           <span class="footer_title">Om os</span>
+            <span class="footer_title">Om os</span>
             <p>Vi er en lille virksomhed, som sælger lokalproduceret is og andre søde sager. I sommerhalvåret finder du os på havnen i Sønderborg, og resten af året kan du købe et udvalg af vores produkter online her på siden.</p>
             <p class="copy">&copy; Copyright 2020 Promenaden Sønderborg</p>
         </div>
-        
+
         <div class="footer_sections box">
-           <!-- Sektion 2 -->
+            <!-- Sektion 2 -->
             <div class="footer_section">
                 <span class="footer_title">Kontaktoplysninger</span>
                 <a href="#" class="footer_link"><i class='bx bx-map'></i>Nørre Havnegade 1, 6400 Sønderborg</a>
                 <a href="#" class="footer_link"><i class='bx bx-phone'></i>+45 60 17 16 00</a>
                 <a href="#" class="footer_link"><i class='bx bx-mail-send'></i>mail@circas.dk</a>
             </div>
-            
+
             <!-- Sektion 3 -->
             <div class="footer_section">
                 <span class="footer_title">Betingelser</span>
@@ -179,21 +176,19 @@
                 <a href="#" class="footer_link">Privatpolitik</a>
                 <a href="#" class="footer_link">Handelsbetingelser</a>
             </div>
-            
+
             <!-- Sektion 4 -->
-            <div class="footer_section"> 
-            <img src="images/betaling.png" alt="payment">
+            <div class="footer_section">
+                <img src="images/betaling.png" alt="payment">
             </div>
-            
+
         </div>
     </footer>
 
     <!-- jQuery library -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- JavaScript -->
     <script src="js/shop.js"></script>
-    
-</body>
 
-</html>
+</body></html>

@@ -2,7 +2,7 @@
 <html lang="da">
 
 <head>
-   
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,26 +15,21 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/check-ud.css">
     <link href="css/jquery.nice-number.css" rel="stylesheet">
-    
-    <!-- mapbox -->
-    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+
+    <!-- Mapbox stylesheets-->
     <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet" />
-        
-    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
-    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css"/>
-    
-    
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.css" type="text/css" />
+
+
 </head>
 
 <body>
 
-    <header>
-        
-    </header>
+    <header></header>
 
     <main>
-       
-         <!-- Processbar -->
+
+        <!-- Processbar -->
         <div id="svg_wrap"></div>
 
         <!-- Checkout -->
@@ -42,7 +37,7 @@
 
         <!-- Personlige oplysninger -->
         <section>
-            <p>Personlige oplysninger</p>
+            <h2>Personlige oplysninger</h2>
             <label class="label">E-mail<span>*</span></label>
             <input type="text">
             <label class="label">Fornavn<span>*</span></label>
@@ -52,10 +47,10 @@
             <label class="label">Telefonnummer<span>*</span></label>
             <input type="text">
         </section>
-        
+
         <!-- Leveringsinformation-->
-         <section>
-            <p>Leveringsoplysninger</p>
+        <section>
+            <h2>Leveringsoplysninger</h2>
             <label class="label">Land<span>*</span></label>
             <input type="text">
             <label class="label">Adresse<span>*</span></label>
@@ -64,52 +59,55 @@
             <input type="text">
             <label class="label">By<span>*</span></label>
             <input type="text">
-        
-           <!-- Map -->
+
+            <!-- Map -->
             <h2>Vælg leveringsted</h2>
-           <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
-           <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
-           <div id="map"></div>
+            <div id="map"></div>
         </section>
-        
-        
+
+
         <!-- Betalingsinformation -->
         <section>
-            <p>Betalingsinformation</p>
+            <h2>Betalingsinformation</h2>
             <label class="label">Subtotal</label>
-            <input type="text" placeholder="DKK"/>
-            <label class="label">Kortholders 
-            navn<span>*</span></label>
+            <input type="text" placeholder="DKK" />
+            <label class="label">Kortholders
+                navn<span>*</span></label>
             <input type="text">
             <label class="label">Kortnummer<span>*</span></label>
             <input type="text">
             <label class="label">Udløbsdato<span>*</span></label>
-            <input type="text" placeholder="MM/YY"/>
+            <input type="text" placeholder="MM/YY" />
             <label class="label">CVC<span>*</span></label>
-            <input type="text" placeholder="XXX"/>
+            <input type="text" placeholder="XXX" />
         </section>
-        
+
         <!-- Knapper -->
         <div class="knap-container">
-        <div class="knap" id="prev">&larr; FORRIGE</div>
-        <div class="knap" id="next">NÆSTE &rarr;</div>
-        <div class="knap" id="submit"><a href="reward.html" class="betal">VIDERE</a></div>
+            <div class="knap" id="prev">&larr; FORRIGE</div>
+            <div class="knap" id="next">NÆSTE &rarr;</div>
+            <div class="knap" id="submit"><a href="reward.html" class="betal">VIDERE</a></div>
         </div>
-          
-        
+
+
     </main>
 
     <footer>
-        
+
     </footer>
 
     <!-- jQuery library -->
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- JavaScript -->
     <script src="js/check-ud.js"></script>
-    
-    
+
+    <!-- Mapbox plugin -->
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/es6-promise@4/dist/es6-promise.auto.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.5.1/mapbox-gl-geocoder.min.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+
 </body>
 
 </html>

@@ -206,10 +206,10 @@ a {
     .header_toggle {
         display: none;
     }
-    
+
     .cart-nav {
         position: absolute;
-    } 
+    }
 
     /* Navigation */
     .nav {
@@ -273,7 +273,7 @@ a {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .cart-nav {
         position: absolute;
         right: 50px;
@@ -417,7 +417,7 @@ hr {
     margin-top: 30px;
 }
 
-.left, 
+.left,
 .right {
     font-family: var(--tekst);
     font-size: var(--p);
@@ -439,70 +439,71 @@ hr {
 
 /* Media queries til content */
 @media screen and (min-width: 768px) {
+
     /* Hover på knapper */
     .content .buttons button {
         transition: all 0.3s ease;
     }
-    
+
     button a:hover {
         color: var(--hvid);
     }
-    
+
     button:first-child:hover {
-        background: var(--cta); 
+        background: var(--cta);
     }
-    
+
     button:last-child:hover {
         color: var(--cta);
         background: var(--hvid);
     }
-    
+
     .wrapper .card .content {
         position: absolute;
         width: 100%;
         background: var(--hvid);
         bottom: -50%;
-        box-shadow: 0px -3px 10px 0px rgba(0,0,0,0.15);
+        box-shadow: 0px -3px 10px 0px rgba(0, 0, 0, 0.15);
         transition: all 0.3s ease;
     }
-    
+
     .wrapper .card {
         position: relative;
         overflow: hidden;
     }
-    
+
     .card {
         width: 300px;
-    height: 350px;
+        height: 350px;
     }
-    
+
     .wrapper .card:hover .content {
         bottom: 0;
     }
-    
+
     .wrapper .card:hover img {
         transform: scale(1.1);
         transition: all 0.3s ease;
     }
-    
+
     .content .row .details p {
         font-size: 16px;
     }
-    
+
     #mandler-2 {
         font-size: 14px;
     }
-    
+
     #chokolade {
         font-size: 11px;
     }
-    
+
     /* Array */
     .array {
         padding-top: 120px;
         font-size: var(--h1-web);
     }
-    
+
     .array p {
         font-size: 20px;
         padding-top: 20px;
@@ -510,34 +511,34 @@ hr {
         margin-left: 200px;
         margin-right: 200px;
     }
-    
-    /* Produkter */ 
+
+    /* Produkter */
     .wrapper {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
         max-width: 1280px;
     }
-    
+
     /* Levering & andre spørgsmål */
     .left {
         width: 50%;
         float: left;
     }
-    
+
     .right {
         width: 50%;
         float: right;
     }
-    
+
     .terms {
         padding-bottom: 175px;
     }
-    
+
     .terms i {
         font-size: 30px;
     }
-    
-    .left, 
+
+    .left,
     .right {
         padding: 30px;
     }
@@ -555,7 +556,7 @@ hr {
     font-size: 1.1rem;
     padding: 20px 0;
     line-height: 1.7;
-    font-family: var(--tekst); 
+    font-family: var(--tekst);
 }
 
 .footer_text,
@@ -569,7 +570,6 @@ hr {
 .footer_sections {
     display: flex;
     flex-wrap: wrap;
-    padding 0;
 }
 
 .footer_section {
@@ -588,7 +588,7 @@ hr {
 }
 
 .footer_link i {
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer_section img {
@@ -608,23 +608,24 @@ hr {
     .footer {
         bottom: 0;
     }
-    
+
     .footer_section {
         width: 50%;
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
-    
+
     .footer_text {
         text-align: center;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     footer_section,
     .footer_text {
         margin-left: 80px;

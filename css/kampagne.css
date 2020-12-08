@@ -414,7 +414,8 @@ btn {
     background: #feada7;
 }
 
-.two, .four {
+.two,
+.four {
     background: #ff6861;
 }
 
@@ -426,7 +427,8 @@ btn {
     background: #ccdfcc;
 }
 
-.box-calender, .five {
+.box-calender,
+.five {
     font-family: var(--tekst);
     font-size: 22px;
     line-height: 1.4;
@@ -446,9 +448,9 @@ btn {
 
 /* 1. advent flip kort */
 .card {
-  width: 100%;
-  height: 250px;
-  perspective: 1000px;
+    width: 100%;
+    height: 250px;
+    perspective: 1000px;
     color: black;
     display: grid;
     font-size: 40px;
@@ -458,12 +460,12 @@ btn {
 }
 
 .card__inner {
-  width: 100%;
-  height: 100%;
-  transition: transform 1s;
-  transform-style: preserve-3d;
-  cursor: pointer;
-  position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
     border: none;
 }
 
@@ -472,25 +474,25 @@ btn {
 }
 
 .card__inner.is-flipped {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .card__face {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  overflow: hidden;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: hidden;
 }
 
 .card__face--front {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card__face--back {
-  transform: rotateY(180deg);
+    transform: rotateY(180deg);
 }
 
 .card__content {
@@ -549,27 +551,28 @@ btn {
 
 @keyframes arm {
     0% {
-    transform: translateX(0px);
-  }
-    
-  50% {
-    transform: translateX(15px);
-  }
-  100% {
-    transform: translateY(0px);
-  }
+        transform: translateX(0px);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 }
 
 #hat {
     animation: flyv 1s infinite alternate;
-     transform-origin: bottom;
+    transform-origin: bottom;
 }
 
 @keyframes flyv {
     from {
-         transform: rotateX(0deg);
+        transform: rotateX(0deg);
     }
-    
+
     to {
         transform: rotateX(10deg);
     }
@@ -584,22 +587,25 @@ btn {
     from {
         transform: rotateX(0deg);
     }
-    
+
     to {
         transform: rotateX(30deg);
     }
 }
 
-#juletra, #stjerne, #snor, #lys {
+#juletra,
+#stjerne,
+#snor,
+#lys {
     animation: tree 1s infinite alternate;
-     transform-origin: bottom;
+    transform-origin: bottom;
 }
 
 @keyframes tree {
     from {
         transform: rotate(0deg);
     }
-    
+
     to {
         transform: rotate(1deg);
     }
@@ -711,21 +717,21 @@ btn {
         grid-column: span 3;
         grid-row: span 1;
     }
-    
+
     /* Adventkalender */
     .card {
         height: 300px;
-    } 
-    
-    .card__content {
-    padding: 45px;
     }
-    
+
+    .card__content {
+        padding: 45px;
+    }
+
     /* Svg animation */
     .svg-container {
-    margin-top: 0;
-    margin-bottom: 50px;
-}
+        margin-top: 0;
+        margin-bottom: 50px;
+    }
 
 }
 
@@ -748,7 +754,6 @@ btn {
 .footer_sections {
     display: flex;
     flex-wrap: wrap;
-    padding 0;
 }
 
 .footer_section {

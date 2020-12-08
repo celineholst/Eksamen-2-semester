@@ -268,7 +268,7 @@ a {
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     .cart-nav {
         position: absolute;
         right: 50px;
@@ -373,6 +373,7 @@ h4 {
 
 /* Media queries til content */
 @media screen and (min-width: 768px) {
+
     /* Produktbillede */
     .imgBox {
         height: 530px;
@@ -381,7 +382,7 @@ h4 {
         padding-top: 50px;
         margin-bottom: 40px;
     }
-    
+
     /* Produktbesrkivelse */
     .content {
         width: 50%;
@@ -391,25 +392,25 @@ h4 {
         padding-left: 40px;
         transition: all 0.3s ease;
     }
-    
+
     .details p {
         font-size: var(--p);
     }
-    
+
     .price {
         margin-top: 10px;
     }
-    
+
     .content button:hover {
         color: var(--cta);
         background: var(--hvid);
     }
-    
+
     /* Infographic */
     .infographic {
         width: 50%;
     }
-    
+
     /* Næringsindhold */
     .nutrition {
         width: 30%;
@@ -424,7 +425,7 @@ h4 {
     font-size: 1.1rem;
     padding: 20px 0;
     line-height: 1.7;
-    font-family: var(--tekst); 
+    font-family: var(--tekst);
 }
 
 .footer_text,
@@ -438,7 +439,6 @@ h4 {
 .footer_sections {
     display: flex;
     flex-wrap: wrap;
-    padding 0;
 }
 
 .footer_section {
@@ -457,7 +457,7 @@ h4 {
 }
 
 .footer_link i {
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer_section img {
@@ -477,23 +477,24 @@ h4 {
     .footer {
         bottom: 0;
     }
-    
+
     .footer_section {
         width: 50%;
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
-    
+
     .footer_text {
         text-align: center;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     footer_section,
     .footer_text {
         margin-left: 80px;

@@ -220,26 +220,26 @@ a {
     .nav_link {
         color: var(--sort);
     }
-    
-    .search-box{
+
+    .search-box {
         margin-top: 37px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: white;
         height: 40px;
-        border-radius:40px;
+        border-radius: 40px;
         padding-right: 50px;
         position: relative;
-        
+
     }
-    
-    .search-box:hover > .search-txt{
+
+    .search-box:hover > .search-txt {
         width: 150px;
         padding: 0 6px;
     }
-    
-    .search-btn{
+
+    .search-btn {
         color: black;
         float: right;
         width: 40px;
@@ -249,9 +249,9 @@ a {
         justify-content: center;
         align-items: center;
     }
-    
-    .search-txt{
-        border:none;
+
+    .search-txt {
+        border: none;
         background: none;
         outline: none;
         float: left;
@@ -261,9 +261,9 @@ a {
         transition: 0.4s;
         line-height: 40px;
         width: 0px;
-        
+
     }
-    
+
 
     /* Dropdown menu */
     .dropdown {
@@ -285,42 +285,40 @@ a {
         margin-right: auto;
     }
 }
-    
+
 }
 
-
-
-.split-screen{
+.split-screen {
     display: grid;
-    grid-template-columns: repeat(auto-fit, manmax(2.5rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
 }
 
-.left{
+.left {
     height: 300px;
 }
 
-.left, .right{
-  display: flex;
+.left,
+.right {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.left{
+.left {
     background-image: url(../images/kageop.jpg);
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0,5));
-    background-size:  cover;
-    
+    background-size: cover;
+
 }
 
-.right{
+.right {
     padding-bottom: 60px;
 }
 
-.right .copy{
+.right .copy {
     text-align: center;
 }
 
-.right p{
+.right p {
     font-family: 'Georgia', sans-serif;
     font-size: 24px;
     margin-top: 30px;
@@ -328,19 +326,20 @@ a {
 
 }
 
-.right h1{
+.right h1 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
     margin-top: 35px;
     font-style: normal;
-    
+
 }
-.right{
+
+.right {
     background: #e9e4d6;
 }
 
-.knap{
-    
+.knap {
+
     margin-top: 30px;
     margin-bottom: 55px;
     font-weight: bold;
@@ -358,61 +357,61 @@ a {
 
 .knap a {
     color: var(--hvid);
-    text-decoration: none;       
+    text-decoration: none;
 }
 
 
 /* madia til split screen */
 @media screen and (min-width: 700px) {
-    
-    .left , .right {
-       width: 50%;
+
+    .left,
+    .right {
+        width: 50%;
     }
-    
+
     .left {
         float: left;
         height: 666px;
     }
-    
-    .right{
+
+    .right {
         height: 666px;
     }
-    .right h1{
-      font-size: 42px;
+
+    .right h1 {
+        font-size: 42px;
         margin-top: -30px;
     }
-    
-    .right p{
+
+    .right p {
         margin-top: 40px;
     }
-    
-    .knap{
-       margin-top: 50px;
+
+    .knap {
+        margin-top: 50px;
         margin-bottom: 0px;
         transition: all 0.3s ease;
     }
-    
+
     .knap:hover {
         background: var(--hvid);
     }
-    
+
     .knap a:hover {
-    color: var(--cta);
+        color: var(--cta);
     }
-    
-    
-    
-     
+
+
 }
 
-.osk{
+.osk {
     font-family: 'Playfair Display', serif;
     font-size: 24px;
     text-align: center;
     margin-top: 25px;
 }
 
-.oska{
+.oska {
     font-family: 'Georgia', sans-serif;
     font-size: 18px;
     text-align: center;
@@ -424,28 +423,28 @@ a {
 
 /* Media queries til tekststykke */
 @media screen and (max-width: 700px) {
-    .oska{
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-top: 10px;
-    
-}
+    .oska {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+
+    }
 }
 
-.container{
+.container {
     max-width: 1100px;
     margin: auto;
     overflow: auto;
     padding: 0 2rem;
     margin-top: 60px;
-    
+
 }
 
-img{
+.container img {
     width 100%;
 }
 
-.card{
+.card {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
@@ -453,34 +452,33 @@ img{
     margin-bottom: 2rem;
 }
 
-.card h2{
+.card h2 {
     margin-bottom: 2rem;
     color: white;
 }
 
-.card p{
+.card p {
     color: white;
 }
 
-
-.card img{
+.card img {
     400px;
-    
+
 }
 
-.card > div{
+.card > div {
     padding: 2rem;
-    
+
 }
 
 /*her bestemmes, at hver anden boks skal have tekst først og så billede */
-.card:nth-child(even) img{
+.card:nth-child(even) img {
     order: 2;
 }
 
 /* Media queries til bokse */
 @media screen and (max-width: 700px) {
-    .card{
+    .card {
         display: block;
     }
 }
@@ -490,7 +488,7 @@ img{
     font-size: 1.1rem;
     padding: 20px 0;
     line-height: 1.7;
-    font-family: var(--tekst); 
+    font-family: var(--tekst);
 }
 
 .footer_text,
@@ -504,7 +502,6 @@ img{
 .footer_sections {
     display: flex;
     flex-wrap: wrap;
-    padding 0;
 }
 
 .footer_section {
@@ -523,7 +520,7 @@ img{
 }
 
 .footer_link i {
-   margin-right: 10px;
+    margin-right: 10px;
 }
 
 .footer_section img {
@@ -543,23 +540,24 @@ img{
     .footer {
         bottom: 0;
     }
-    
+
     .footer_section {
         width: 50%;
         display: block;
-    margin-left: auto;
-    margin-right: auto;
+        margin-left: auto;
+        margin-right: auto;
         text-align: center;
     }
-    
+
     .footer_text {
         text-align: center;
         margin-left: auto;
-    margin-right: auto;
+        margin-right: auto;
     }
 }
 
 @media screen and (min-width: 1024px) {
+
     footer_section,
     .footer_text {
         margin-left: 80px;
