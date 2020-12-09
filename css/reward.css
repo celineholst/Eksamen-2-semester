@@ -111,6 +111,7 @@ body {
     line-height: 1.5;
     padding: 5px;
     font-family: var(--tekst);
+    padding-bottom: 30px;
 }
 
 .popup span {
@@ -118,31 +119,30 @@ body {
 }
 
 /* CTA 1 */
-.popup .videre-btn {
+.popup knap {
     margin-top: 15px;
 }
 
-.popup .videre-btn button {
-    padding: 10px 20px;
-    background: var(--cta);
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
 .knap {
+    margin-top: 30px;
+    margin-bottom: 55px;
+    font-weight: bold;
+    font-family: 'Georgia', sans-serif;
+    font-size: 16px;
     text-decoration: none;
-    color: #fff;
-    transition: .5s;
+    padding: 10px 10px;
+    border-radius: 3px;
+    border: 2px solid #cd3d4b;
+    cursor: pointer;
+    outline: none;
+    background: var(--cta);
+    text-transform: uppercase;
 }
 
-.knap:hover {
-    background: var(--cta);
-    color: #000;
+a {
+    color: var(--hvid);
+    text-decoration: none;
+    font-style: normal;
 }
 
 .popup > div {
@@ -272,6 +272,21 @@ label span {
 
 /* Media rules */
 @media (min-width: 768px) {
+
+    /* Hover */
+    .knap {
+        transition: all 0.3s ease;
+    }
+
+    .knap:hover {
+        background: var(--hvid);
+    }
+
+    a:hover {
+        color: var(--cta);
+    }
+
+    /* Box styles */
     #open-popup-btn {
         margin-bottom: 100px;
     }

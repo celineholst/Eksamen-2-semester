@@ -389,20 +389,41 @@ main {
     font-size: var(--p);
     font-family: var(--tekst);
     font-weight: bold;
-    border-radius: 3px;
-    border: 2px solid #cd3c4b;
     cursor: pointer;
     text-transform: uppercase;
+    border: 2px solid #cd3c4b;
+    border-radius: 3px;
 }
 
-button a {
+a {
     text-decoration: none;
     color: var(--cta);
 }
 
-.buttons button:first-child {
-    background: var(--hvid);
-    margin-right: 10px;
+.butn {
+    border: 2px solid #cd3c4b;
+    border-radius: 3px;
+    width: 90%;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    text-align: center;
+    padding: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+content-2 a {
+    width: 100%;
+    outline: none;
+    padding: 10px 0;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid #cd3c4b;
+    border-radius: 3px;
 }
 
 .buttons button:last-child {
@@ -445,12 +466,13 @@ hr {
         transition: all 0.3s ease;
     }
 
-    button a:hover {
-        color: var(--hvid);
+    .butn {
+        transition: all 0.3s ease;
     }
 
-    button:first-child:hover {
+    .butn:hover {
         background: var(--cta);
+        color: var(--hvid);
     }
 
     button:last-child:hover {

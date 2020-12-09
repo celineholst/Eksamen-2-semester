@@ -244,7 +244,7 @@ a {
 
 }
 
-/* styling af split-screen øvers på siden*/
+/* Styling af split-screen øvers på siden*/
 .split-screen {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(2.5rem, 1fr));
@@ -269,12 +269,16 @@ a {
 
 .right .copy {
     text-align: center;
+    height: 340px;
 }
 
 .right p {
     font-family: 'Georgia', sans-serif;
-    font-size: 24px;
+    font-size: var(--tekst);
     margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 1.4;
     font-style: normal;
 }
 
@@ -296,7 +300,6 @@ a {
 }
 
 .knap {
-
     margin-top: 30px;
     margin-bottom: 55px;
     font-weight: bold;
@@ -312,9 +315,15 @@ a {
     text-transform: uppercase;
 }
 
-.knap a {
+#down {
+    position: relative;
+    top: 40px;
+}
+
+a {
     color: var(--hvid);
     text-decoration: none;
+    font-style: normal;
 }
 
 
@@ -337,11 +346,14 @@ a {
 
     .right h1 {
         font-size: 42px;
-        margin-top: -30px;
     }
 
     .right p {
-        margin-top: 40px;
+        margin-top: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+        line-height: 1.5;
+        font-size: 18px;
     }
 
     .knap {
@@ -354,7 +366,7 @@ a {
         background: var(--hvid);
     }
 
-    .knap a:hover {
+    a:hover {
         color: var(--cta);
     }
 
@@ -375,31 +387,31 @@ a {
 
 .oska {
     font-family: 'Georgia', sans-serif;
-    font-size: 18px;
+    font-size: var(--tekst);
+    line-height: 1.4;
     text-align: center;
-    margin-left: 190px;
-    margin-right: 190px;
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* Media queries til tekststykke */
-@media screen and (max-width: 700px) {
+@media screen and (min-width: 700px) {
     .oska {
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 10px;
+        margin-right: 190px;
+        margin-left: 190px;
+        margin-top: 20px;
         margin-bottom: 30px;
+        font-size: 18px;
     }
 }
 
 /* styling af bokse der glider ind */
 .container {
-    max-width: 1100px;
     margin: auto;
     overflow: auto;
     padding: 0 2rem;
-
 }
 
 img {
@@ -407,43 +419,58 @@ img {
 }
 
 .card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 2rem;
     background: #4f5f75;
     margin-bottom: 2rem;
+    padding-bottom: 30px;
 }
 
 .card h2 {
     margin-bottom: 2rem;
     color: white;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .card p {
     color: white;
+    font-size: 18px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
-
-.card img {
-    400px;
-
-}
-
-.card > div {
-    padding: 2rem;
-
-}
-
-/*her bestemmes, at hver anden boks skal have tekst først og så billede, og omvendt med de andre bokse */
-.card:nth-child(even) img {
-    order: 2;
+.box-knap {
+    margin-left: 15px;
 }
 
 /* Media queries til bokse */
-@media screen and (max-width: 700px) {
-    .card {
-        display: block;
+@media screen and (min-width: 700px) {
+    .container {
+        max-width: 1100px;
+        margin: auto;
+        overflow: auto;
+        padding: 0 2rem;
 
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .card > div {
+        padding: 2rem;
+
+    }
+
+    /*her bestemmes, at hver anden boks skal have tekst først og så billede, og omvendt med de andre bokse */
+    .card:nth-child(even) img {
+        order: 2;
     }
 }
 

@@ -268,25 +268,25 @@ a {
     line-height: 1.4;
     margin-left: 20px;
     margin-right: 20px;
-    padding-bottom: 15px;
+    padding-bottom: 25px;
 }
 
-.banner button a {
+a {
     text-decoration: none;
-    color: var(--hvid);
-    font-size: var(--p);
-    font-family: var(--tekst);
-    font-weight: bold;
-    text-transform: uppercase;
+    color: white;
 }
 
-.banner button {
+#knap {
     border-radius: 3px;
     border: 2px solid #cd3c4b;
     cursor: pointer;
     background: var(--cta);
     padding: 10px 10px;
     outline: none;
+    font-size: var(--p);
+    font-family: var(--tekst);
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 /* Intro til julekalender */
@@ -510,7 +510,7 @@ btn {
     line-height: 1.4;
 }
 
-.card__content button {
+#knap-2 {
     outline: none;
     padding: 5px 5px;
     font-size: var(--p);
@@ -523,7 +523,7 @@ btn {
     background: var(--cta);
 }
 
-.card__content button a {
+.card__content a {
     color: var(--hvid);
 }
 
@@ -641,11 +641,11 @@ btn {
         font-size: 22px;
     }
 
-    .banner button:hover {
+    #knap:hover {
         background: var(--hvid);
     }
 
-    .banner button a:hover {
+    a:hover {
         color: var(--cta);
     }
 
@@ -725,6 +725,10 @@ btn {
 
     .card__content {
         padding: 45px;
+    }
+
+    #knap-2:hover {
+        background: var(--hvid);
     }
 
     /* Svg animation */
