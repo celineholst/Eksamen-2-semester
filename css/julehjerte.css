@@ -244,7 +244,7 @@ a {
 
 /* splitscreen øverst */
 .snemand1 {
-    width: 520px;
+    width: 95%;
     height: auto;
 }
 
@@ -359,8 +359,10 @@ a {
 
 .snemand2 {
     height: auto;
-    width: 300px;
-    margin-left: 100px;
+    width: 400px;
+    margin-left: 75px;
+    margin-top: 30px;
+    margin-bottom: 36px;
 }
 
 .vogt {

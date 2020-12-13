@@ -429,6 +429,7 @@ img {
     color: white;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 20px;
 }
 
 .card p {
@@ -457,6 +458,7 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
+        padding-bottom: 0px;
     }
 
     .card > div {

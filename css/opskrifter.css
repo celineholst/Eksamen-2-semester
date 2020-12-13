@@ -306,7 +306,7 @@ a {
 }
 
 .left {
-    background-image: url(../images/kageop.jpg);
+    background-image: url(../images/forside-opskrift.png);
     background-size: cover;
 
 }
@@ -462,6 +462,7 @@ a {
     color: white;
     margin-left: 15px;
     margin-right: 15px;
+    margin-top: 20px;
 }
 
 .card p {
@@ -470,6 +471,11 @@ a {
     margin-bottom: 30px;
     margin-left: 15px;
     margin-right: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
 }
 
 .box-knap {
@@ -490,11 +496,16 @@ a {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 2rem;
+        height: 502px;
     }
 
     .card > div {
         padding: 2rem;
 
+    }
+
+    .card h2 {
+        margin-top: 140px;
     }
 
     /*her bestemmes, at hver anden boks skal have tekst først og så billede, og omvendt med de andre bokse */

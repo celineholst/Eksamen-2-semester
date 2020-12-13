@@ -275,9 +275,8 @@ a {
 /* Media queries til split-screen */
 @media screen and (max-width: 700px) {
     .snemand1 {
-        width: 270px;
+        width: 90%;
         height: auto;
-        margin: 20px;
     }
 
     .tekst {
@@ -355,12 +354,16 @@ a {
     margin-bottom: 20px;
 }
 
-
+.snemand1 {
+    width: 98%;
+}
 
 .snemand2 {
     height: auto;
-    width: 300px;
-    margin-left: 100px;
+    width: 400px;
+    margin-left: 75px;
+    margin-top: 30px;
+    margin-bottom: 22px;
 }
 
 .vogt {
