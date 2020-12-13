@@ -29,7 +29,7 @@ $(document).ready(function () {
     /* Audio af julesang */
     var button = document.getElementById("button");
     var audio = document.getElementById("player");
-    
+
     // Skifte ikon ved play og pause
     button.addEventListener("click", function () {
         if (audio.paused) {

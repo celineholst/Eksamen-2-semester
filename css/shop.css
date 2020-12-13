@@ -458,6 +458,14 @@ hr {
     padding-bottom: 40px;
 }
 
+.left p {
+    margin-bottom: 20px;
+}
+
+.right p {
+    margin-bottom: 20px;
+}
+
 /* Media queries til content */
 @media screen and (min-width: 768px) {
 
@@ -516,6 +524,10 @@ hr {
         font-size: 14px;
     }
 
+    #mandler {
+        font-size: 18px;
+    }
+
     #chokolade {
         font-size: 11px;
     }
@@ -562,7 +574,7 @@ hr {
 
     .left,
     .right {
-        padding: 30px;
+        padding-top: 30px;
     }
 }
 
@@ -629,6 +641,7 @@ hr {
 @media screen and (min-width: 768px) {
     .footer {
         bottom: 0;
+        margin-top: 50px;
     }
 
     .footer_section {

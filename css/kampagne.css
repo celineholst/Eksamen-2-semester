@@ -271,7 +271,7 @@ a {
     padding-bottom: 25px;
 }
 
-a {
+.banner a {
     text-decoration: none;
     color: white;
 }
@@ -645,7 +645,7 @@ btn {
         background: var(--hvid);
     }
 
-    a:hover {
+    .banner a:hover {
         color: var(--cta);
     }
 
@@ -725,10 +725,6 @@ btn {
 
     .card__content {
         padding: 45px;
-    }
-
-    #knap-2:hover {
-        background: var(--hvid);
     }
 
     /* Svg animation */
